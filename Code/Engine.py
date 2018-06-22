@@ -204,7 +204,8 @@ key_map = {'w': pygame.K_w,
            'd': pygame.K_d}
 
 def joystick_avail():
-    return pygame.joystick.get_count()
+    return False
+    #return pygame.joystick.get_count()
 
 def get_joystick():
     return pygame.joystick.Joystick(0)
