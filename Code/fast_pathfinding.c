@@ -450,14 +450,14 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "Code\\fast_pathfinding.pyx",
+  "Code/fast_pathfinding.pyx",
 };
 
 /*--- Type declarations ---*/
 struct __pyx_obj_4Code_16fast_pathfinding_Node;
 struct __pyx_obj_4Code_16fast_pathfinding_Djikstra;
 
-/* "Code\fast_pathfinding.pyx":15
+/* "Code/fast_pathfinding.pyx":15
  *     return False
  * 
  * cdef class Node:             # <<<<<<<<<<<<<<
@@ -478,7 +478,7 @@ struct __pyx_obj_4Code_16fast_pathfinding_Node {
 };
 
 
-/* "Code\fast_pathfinding.pyx":268
+/* "Code/fast_pathfinding.pyx":268
  * 
  * # THIS ACTUALLY WORKS!!!
  * cdef class Djikstra:             # <<<<<<<<<<<<<<
@@ -501,7 +501,7 @@ struct __pyx_obj_4Code_16fast_pathfinding_Djikstra {
 
 
 
-/* "Code\fast_pathfinding.pyx":15
+/* "Code/fast_pathfinding.pyx":15
  *     return False
  * 
  * cdef class Node:             # <<<<<<<<<<<<<<
@@ -515,7 +515,7 @@ struct __pyx_vtabstruct_4Code_16fast_pathfinding_Node {
 static struct __pyx_vtabstruct_4Code_16fast_pathfinding_Node *__pyx_vtabptr_4Code_16fast_pathfinding_Node;
 
 
-/* "Code\fast_pathfinding.pyx":268
+/* "Code/fast_pathfinding.pyx":268
  * 
  * # THIS ACTUALLY WORKS!!!
  * cdef class Djikstra:             # <<<<<<<<<<<<<<
@@ -851,8 +851,6 @@ static PyObject* __pyx_print_kwargs = 0;
 
 static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *);
 
-static CYTHON_INLINE int __Pyx_StrEq(const char *, const char *);
-
 static int __Pyx_check_binary_version(void);
 
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
@@ -881,9 +879,10 @@ static char __pyx_k_g[] = "g";
 static char __pyx_k_h[] = "h";
 static char __pyx_k_x[] = "x";
 static char __pyx_k_y[] = "y";
+static char __pyx_k_GC[] = "GC";
 static char __pyx_k__2[] = "- ";
 static char __pyx_k__4[] = "\n";
-static char __pyx_k__6[] = "*";
+static char __pyx_k_cf[] = "cf";
 static char __pyx_k_add[] = "add";
 static char __pyx_k_adj[] = "adj";
 static char __pyx_k_doc[] = "__doc__";
@@ -1024,7 +1023,7 @@ static char __pyx_k_Grid_Manager_init_unit_map[] = "Grid_Manager.init_unit_map";
 static char __pyx_k_Grid_Manager_set_unit_node[] = "Grid_Manager.set_unit_node";
 static char __pyx_k_Grid_Manager_remove_aura_node[] = "Grid_Manager.remove_aura_node";
 static char __pyx_k_Grid_Manager_get_aura_positions[] = "Grid_Manager.get_aura_positions";
-static char __pyx_k_c_Users_pbradley_Documents_GitHu[] = "c:\\Users\\pbradley\\Documents\\GitHub\\lex-talionis\\Code\\fast_pathfinding.pyx";
+static char __pyx_k_home_dan_python_pro_lex_talioni[] = "/home/dan/python/pro/lex-talionis/Code/fast_pathfinding.pyx";
 static PyObject *__pyx_kp_s_;
 static PyObject *__pyx_n_s_AStar;
 static PyObject *__pyx_n_s_AStar___init;
@@ -1039,6 +1038,7 @@ static PyObject *__pyx_n_s_AStar_set_goal_pos;
 static PyObject *__pyx_n_s_AStar_update_cell;
 static PyObject *__pyx_n_s_CONSTANTS;
 static PyObject *__pyx_n_s_Code_fast_pathfinding;
+static PyObject *__pyx_n_s_GC;
 static PyObject *__pyx_n_s_GlobalConstants;
 static PyObject *__pyx_n_s_Grid_Manager;
 static PyObject *__pyx_n_s_Grid_Manager___init;
@@ -1060,7 +1060,6 @@ static PyObject *__pyx_n_s_MCOSTDATA;
 static PyObject *__pyx_n_s_Normal;
 static PyObject *__pyx_kp_s__2;
 static PyObject *__pyx_kp_s__4;
-static PyObject *__pyx_n_s__6;
 static PyObject *__pyx_n_s_add;
 static PyObject *__pyx_n_s_add_aura_node;
 static PyObject *__pyx_n_s_adj;
@@ -1071,9 +1070,9 @@ static PyObject *__pyx_n_s_ally_block;
 static PyObject *__pyx_n_s_aura;
 static PyObject *__pyx_n_s_aura_map;
 static PyObject *__pyx_n_s_c;
-static PyObject *__pyx_kp_s_c_Users_pbradley_Documents_GitHu;
 static PyObject *__pyx_n_s_cell;
 static PyObject *__pyx_n_s_cells;
+static PyObject *__pyx_n_s_cf;
 static PyObject *__pyx_n_s_closed;
 static PyObject *__pyx_n_s_configuration;
 static PyObject *__pyx_n_s_cost;
@@ -1119,6 +1118,7 @@ static PyObject *__pyx_n_s_heappop;
 static PyObject *__pyx_n_s_heappush;
 static PyObject *__pyx_n_s_heapq;
 static PyObject *__pyx_n_s_height;
+static PyObject *__pyx_kp_s_home_dan_python_pro_lex_talioni;
 static PyObject *__pyx_n_s_idx;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_init;
@@ -1227,59 +1227,59 @@ static PyObject *__pyx_tp_new_4Code_16fast_pathfinding_Djikstra(PyTypeObject *t,
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_tuple__3;
 static PyObject *__pyx_tuple__5;
-static PyObject *__pyx_tuple__7;
-static PyObject *__pyx_tuple__9;
-static PyObject *__pyx_tuple__11;
-static PyObject *__pyx_tuple__13;
-static PyObject *__pyx_tuple__15;
-static PyObject *__pyx_tuple__17;
-static PyObject *__pyx_tuple__19;
-static PyObject *__pyx_tuple__21;
-static PyObject *__pyx_tuple__23;
-static PyObject *__pyx_tuple__25;
-static PyObject *__pyx_tuple__27;
-static PyObject *__pyx_tuple__29;
-static PyObject *__pyx_tuple__31;
-static PyObject *__pyx_tuple__33;
-static PyObject *__pyx_tuple__35;
-static PyObject *__pyx_tuple__37;
-static PyObject *__pyx_tuple__39;
-static PyObject *__pyx_tuple__41;
-static PyObject *__pyx_tuple__43;
-static PyObject *__pyx_tuple__45;
-static PyObject *__pyx_tuple__47;
-static PyObject *__pyx_tuple__49;
-static PyObject *__pyx_tuple__51;
-static PyObject *__pyx_tuple__53;
-static PyObject *__pyx_tuple__55;
-static PyObject *__pyx_codeobj__8;
-static PyObject *__pyx_codeobj__10;
-static PyObject *__pyx_codeobj__12;
-static PyObject *__pyx_codeobj__14;
-static PyObject *__pyx_codeobj__16;
-static PyObject *__pyx_codeobj__18;
-static PyObject *__pyx_codeobj__20;
-static PyObject *__pyx_codeobj__22;
-static PyObject *__pyx_codeobj__24;
-static PyObject *__pyx_codeobj__26;
-static PyObject *__pyx_codeobj__28;
-static PyObject *__pyx_codeobj__30;
-static PyObject *__pyx_codeobj__32;
-static PyObject *__pyx_codeobj__34;
-static PyObject *__pyx_codeobj__36;
-static PyObject *__pyx_codeobj__38;
-static PyObject *__pyx_codeobj__40;
-static PyObject *__pyx_codeobj__42;
-static PyObject *__pyx_codeobj__44;
-static PyObject *__pyx_codeobj__46;
-static PyObject *__pyx_codeobj__48;
-static PyObject *__pyx_codeobj__50;
-static PyObject *__pyx_codeobj__52;
-static PyObject *__pyx_codeobj__54;
-static PyObject *__pyx_codeobj__56;
+static PyObject *__pyx_tuple__6;
+static PyObject *__pyx_tuple__8;
+static PyObject *__pyx_tuple__10;
+static PyObject *__pyx_tuple__12;
+static PyObject *__pyx_tuple__14;
+static PyObject *__pyx_tuple__16;
+static PyObject *__pyx_tuple__18;
+static PyObject *__pyx_tuple__20;
+static PyObject *__pyx_tuple__22;
+static PyObject *__pyx_tuple__24;
+static PyObject *__pyx_tuple__26;
+static PyObject *__pyx_tuple__28;
+static PyObject *__pyx_tuple__30;
+static PyObject *__pyx_tuple__32;
+static PyObject *__pyx_tuple__34;
+static PyObject *__pyx_tuple__36;
+static PyObject *__pyx_tuple__38;
+static PyObject *__pyx_tuple__40;
+static PyObject *__pyx_tuple__42;
+static PyObject *__pyx_tuple__44;
+static PyObject *__pyx_tuple__46;
+static PyObject *__pyx_tuple__48;
+static PyObject *__pyx_tuple__50;
+static PyObject *__pyx_tuple__52;
+static PyObject *__pyx_tuple__54;
+static PyObject *__pyx_codeobj__7;
+static PyObject *__pyx_codeobj__9;
+static PyObject *__pyx_codeobj__11;
+static PyObject *__pyx_codeobj__13;
+static PyObject *__pyx_codeobj__15;
+static PyObject *__pyx_codeobj__17;
+static PyObject *__pyx_codeobj__19;
+static PyObject *__pyx_codeobj__21;
+static PyObject *__pyx_codeobj__23;
+static PyObject *__pyx_codeobj__25;
+static PyObject *__pyx_codeobj__27;
+static PyObject *__pyx_codeobj__29;
+static PyObject *__pyx_codeobj__31;
+static PyObject *__pyx_codeobj__33;
+static PyObject *__pyx_codeobj__35;
+static PyObject *__pyx_codeobj__37;
+static PyObject *__pyx_codeobj__39;
+static PyObject *__pyx_codeobj__41;
+static PyObject *__pyx_codeobj__43;
+static PyObject *__pyx_codeobj__45;
+static PyObject *__pyx_codeobj__47;
+static PyObject *__pyx_codeobj__49;
+static PyObject *__pyx_codeobj__51;
+static PyObject *__pyx_codeobj__53;
+static PyObject *__pyx_codeobj__55;
 
-/* "Code\fast_pathfinding.pyx":7
- * from configuration import *
+/* "Code/fast_pathfinding.pyx":7
+ * import configuration as cf
  * 
  * cdef bint compare_teams(str team1, str team2):             # <<<<<<<<<<<<<<
  *     # Returns True if allies, false if enemies
@@ -1297,7 +1297,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("compare_teams", 0);
 
-  /* "Code\fast_pathfinding.pyx":9
+  /* "Code/fast_pathfinding.pyx":9
  * cdef bint compare_teams(str team1, str team2):
  *     # Returns True if allies, false if enemies
  *     if team1 == team2:             # <<<<<<<<<<<<<<
@@ -1308,7 +1308,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":10
+    /* "Code/fast_pathfinding.pyx":10
  *     # Returns True if allies, false if enemies
  *     if team1 == team2:
  *         return True             # <<<<<<<<<<<<<<
@@ -1318,7 +1318,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
     __pyx_r = 1;
     goto __pyx_L0;
 
-    /* "Code\fast_pathfinding.pyx":9
+    /* "Code/fast_pathfinding.pyx":9
  * cdef bint compare_teams(str team1, str team2):
  *     # Returns True if allies, false if enemies
  *     if team1 == team2:             # <<<<<<<<<<<<<<
@@ -1327,7 +1327,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":11
+  /* "Code/fast_pathfinding.pyx":11
  *     if team1 == team2:
  *         return True
  *     elif (team1 == 'player' and team2 == 'other') or (team2 == 'player' and team1 == 'other'):             # <<<<<<<<<<<<<<
@@ -1361,7 +1361,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":12
+    /* "Code/fast_pathfinding.pyx":12
  *         return True
  *     elif (team1 == 'player' and team2 == 'other') or (team2 == 'player' and team1 == 'other'):
  *         return True             # <<<<<<<<<<<<<<
@@ -1371,7 +1371,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
     __pyx_r = 1;
     goto __pyx_L0;
 
-    /* "Code\fast_pathfinding.pyx":11
+    /* "Code/fast_pathfinding.pyx":11
  *     if team1 == team2:
  *         return True
  *     elif (team1 == 'player' and team2 == 'other') or (team2 == 'player' and team1 == 'other'):             # <<<<<<<<<<<<<<
@@ -1380,7 +1380,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":13
+  /* "Code/fast_pathfinding.pyx":13
  *     elif (team1 == 'player' and team2 == 'other') or (team2 == 'player' and team1 == 'other'):
  *         return True
  *     return False             # <<<<<<<<<<<<<<
@@ -1390,8 +1390,8 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
   __pyx_r = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":7
- * from configuration import *
+  /* "Code/fast_pathfinding.pyx":7
+ * import configuration as cf
  * 
  * cdef bint compare_teams(str team1, str team2):             # <<<<<<<<<<<<<<
  *     # Returns True if allies, false if enemies
@@ -1407,7 +1407,7 @@ static int __pyx_f_4Code_16fast_pathfinding_compare_teams(PyObject *__pyx_v_team
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":24
+/* "Code/fast_pathfinding.pyx":24
  *     cdef public float h
  *     cdef public float f
  *     def __init__(self, int x, int y, bint reachable, int cost):             # <<<<<<<<<<<<<<
@@ -1503,7 +1503,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "Code\fast_pathfinding.pyx":32
+  /* "Code/fast_pathfinding.pyx":32
  *         cost - How many movement points to reach
  *         """
  *         self.reachable = reachable             # <<<<<<<<<<<<<<
@@ -1512,7 +1512,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
  */
   __pyx_v_self->reachable = __pyx_v_reachable;
 
-  /* "Code\fast_pathfinding.pyx":33
+  /* "Code/fast_pathfinding.pyx":33
  *         """
  *         self.reachable = reachable
  *         self.cost = cost             # <<<<<<<<<<<<<<
@@ -1521,7 +1521,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
  */
   __pyx_v_self->cost = __pyx_v_cost;
 
-  /* "Code\fast_pathfinding.pyx":34
+  /* "Code/fast_pathfinding.pyx":34
  *         self.reachable = reachable
  *         self.cost = cost
  *         self.x = x             # <<<<<<<<<<<<<<
@@ -1530,7 +1530,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
  */
   __pyx_v_self->x = __pyx_v_x;
 
-  /* "Code\fast_pathfinding.pyx":35
+  /* "Code/fast_pathfinding.pyx":35
  *         self.cost = cost
  *         self.x = x
  *         self.y = y             # <<<<<<<<<<<<<<
@@ -1539,7 +1539,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
  */
   __pyx_v_self->y = __pyx_v_y;
 
-  /* "Code\fast_pathfinding.pyx":36
+  /* "Code/fast_pathfinding.pyx":36
  *         self.x = x
  *         self.y = y
  *         self.reset()             # <<<<<<<<<<<<<<
@@ -1548,7 +1548,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
  */
   ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Node *)__pyx_v_self->__pyx_vtab)->reset(__pyx_v_self, 0);
 
-  /* "Code\fast_pathfinding.pyx":24
+  /* "Code/fast_pathfinding.pyx":24
  *     cdef public float h
  *     cdef public float f
  *     def __init__(self, int x, int y, bint reachable, int cost):             # <<<<<<<<<<<<<<
@@ -1562,7 +1562,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node___init__(struct __pyx_obj_4Co
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":38
+/* "Code/fast_pathfinding.pyx":38
  *         self.reset()
  * 
  *     cpdef int reset(self):             # <<<<<<<<<<<<<<
@@ -1618,7 +1618,7 @@ static int __pyx_f_4Code_16fast_pathfinding_4Node_reset(struct __pyx_obj_4Code_1
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":40
+  /* "Code/fast_pathfinding.pyx":40
  *     cpdef int reset(self):
  *         # Malleable properties
  *         self.parent = None             # <<<<<<<<<<<<<<
@@ -1631,7 +1631,7 @@ static int __pyx_f_4Code_16fast_pathfinding_4Node_reset(struct __pyx_obj_4Code_1
   __Pyx_DECREF(((PyObject *)__pyx_v_self->parent));
   __pyx_v_self->parent = ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)Py_None);
 
-  /* "Code\fast_pathfinding.pyx":41
+  /* "Code/fast_pathfinding.pyx":41
  *         # Malleable properties
  *         self.parent = None
  *         self.g = 0             # <<<<<<<<<<<<<<
@@ -1640,7 +1640,7 @@ static int __pyx_f_4Code_16fast_pathfinding_4Node_reset(struct __pyx_obj_4Code_1
  */
   __pyx_v_self->g = 0;
 
-  /* "Code\fast_pathfinding.pyx":42
+  /* "Code/fast_pathfinding.pyx":42
  *         self.parent = None
  *         self.g = 0
  *         self.h = 0             # <<<<<<<<<<<<<<
@@ -1649,7 +1649,7 @@ static int __pyx_f_4Code_16fast_pathfinding_4Node_reset(struct __pyx_obj_4Code_1
  */
   __pyx_v_self->h = 0.0;
 
-  /* "Code\fast_pathfinding.pyx":43
+  /* "Code/fast_pathfinding.pyx":43
  *         self.g = 0
  *         self.h = 0
  *         self.f = 0             # <<<<<<<<<<<<<<
@@ -1658,7 +1658,7 @@ static int __pyx_f_4Code_16fast_pathfinding_4Node_reset(struct __pyx_obj_4Code_1
  */
   __pyx_v_self->f = 0.0;
 
-  /* "Code\fast_pathfinding.pyx":38
+  /* "Code/fast_pathfinding.pyx":38
  *         self.reset()
  * 
  *     cpdef int reset(self):             # <<<<<<<<<<<<<<
@@ -1720,7 +1720,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_4Node_2reset(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":16
+/* "Code/fast_pathfinding.pyx":16
  * 
  * cdef class Node:
  *     cdef public bint reachable             # <<<<<<<<<<<<<<
@@ -1802,7 +1802,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_9reachable_2__set__(struct __
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":17
+/* "Code/fast_pathfinding.pyx":17
  * cdef class Node:
  *     cdef public bint reachable
  *     cdef public int cost             # <<<<<<<<<<<<<<
@@ -1884,7 +1884,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_4cost_2__set__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":18
+/* "Code/fast_pathfinding.pyx":18
  *     cdef public bint reachable
  *     cdef public int cost
  *     cdef public int x             # <<<<<<<<<<<<<<
@@ -1966,7 +1966,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_1x_2__set__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":19
+/* "Code/fast_pathfinding.pyx":19
  *     cdef public int cost
  *     cdef public int x
  *     cdef public int y             # <<<<<<<<<<<<<<
@@ -2048,7 +2048,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_1y_2__set__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":20
+/* "Code/fast_pathfinding.pyx":20
  *     cdef public int x
  *     cdef public int y
  *     cdef public Node parent             # <<<<<<<<<<<<<<
@@ -2156,7 +2156,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_6parent_4__del__(struct __pyx
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":21
+/* "Code/fast_pathfinding.pyx":21
  *     cdef public int y
  *     cdef public Node parent
  *     cdef public int g             # <<<<<<<<<<<<<<
@@ -2238,7 +2238,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_1g_2__set__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":22
+/* "Code/fast_pathfinding.pyx":22
  *     cdef public Node parent
  *     cdef public int g
  *     cdef public float h             # <<<<<<<<<<<<<<
@@ -2320,7 +2320,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_1h_2__set__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":23
+/* "Code/fast_pathfinding.pyx":23
  *     cdef public int g
  *     cdef public float h
  *     cdef public float f             # <<<<<<<<<<<<<<
@@ -2402,7 +2402,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_4Node_1f_2__set__(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":47
+/* "Code/fast_pathfinding.pyx":47
  * class Grid_Manager(object):
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']
  *     def __init__(self, tilemap):             # <<<<<<<<<<<<<<
@@ -2489,7 +2489,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "Code\fast_pathfinding.pyx":48
+  /* "Code/fast_pathfinding.pyx":48
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']
  *     def __init__(self, tilemap):
  *         self.gridHeight = tilemap.height             # <<<<<<<<<<<<<<
@@ -2501,7 +2501,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gridHeight, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 48; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":49
+  /* "Code/fast_pathfinding.pyx":49
  *     def __init__(self, tilemap):
  *         self.gridHeight = tilemap.height
  *         self.gridWidth = tilemap.width             # <<<<<<<<<<<<<<
@@ -2513,7 +2513,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gridWidth, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 49; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":50
+  /* "Code/fast_pathfinding.pyx":50
  *         self.gridHeight = tilemap.height
  *         self.gridWidth = tilemap.width
  *         self.grids = {} # Dictionary             # <<<<<<<<<<<<<<
@@ -2525,43 +2525,46 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_grids, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 50; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":53
+  /* "Code/fast_pathfinding.pyx":53
  * 
  *         cdef int num
- *         for num in range(len(MCOSTDATA['Normal'])):             # <<<<<<<<<<<<<<
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):             # <<<<<<<<<<<<<<
  *             self.grids[num] = self.init_grid(num, tilemap) # For each movement type
  * 
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_MCOSTDATA); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_GC); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_GetItem(__pyx_t_1, __pyx_n_s_Normal); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_MCOSTDATA); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyObject_GetItem(__pyx_t_2, __pyx_n_s_Normal); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_3 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 53; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
     __pyx_v_num = __pyx_t_4;
 
-    /* "Code\fast_pathfinding.pyx":54
+    /* "Code/fast_pathfinding.pyx":54
  *         cdef int num
- *         for num in range(len(MCOSTDATA['Normal'])):
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):
  *             self.grids[num] = self.init_grid(num, tilemap) # For each movement type             # <<<<<<<<<<<<<<
  * 
  *         self.team_map = self.init_unit_map()
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_grid); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_grid); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_num); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     __pyx_t_7 = 0;
-    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
       if (likely(__pyx_t_6)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
         __Pyx_INCREF(__pyx_t_6);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_1, function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
         __pyx_t_7 = 1;
       }
     }
@@ -2576,120 +2579,120 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
     __Pyx_GIVEREF(__pyx_v_tilemap);
     PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_7, __pyx_v_tilemap);
     __pyx_t_5 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_v_num, __pyx_t_2, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    if (unlikely(__Pyx_SetItemInt(__pyx_t_2, __pyx_v_num, __pyx_t_1, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":56
+  /* "Code/fast_pathfinding.pyx":56
  *             self.grids[num] = self.init_grid(num, tilemap) # For each movement type
  * 
  *         self.team_map = self.init_unit_map()             # <<<<<<<<<<<<<<
  *         self.unit_map = self.init_unit_map()
  *         self.aura_map = self.init_aura_map()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_unit_map); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_unit_map); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_8 = NULL;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
-    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_1);
+  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_2);
     if (likely(__pyx_t_8)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_1, function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
     }
   }
   if (__pyx_t_8) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_8); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   } else {
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_team_map, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_team_map, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 56; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":57
+  /* "Code/fast_pathfinding.pyx":57
  * 
  *         self.team_map = self.init_unit_map()
  *         self.unit_map = self.init_unit_map()             # <<<<<<<<<<<<<<
  *         self.aura_map = self.init_aura_map()
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_unit_map); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_unit_map); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_8 = NULL;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
-    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_1);
+  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_2);
     if (likely(__pyx_t_8)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_1, function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
     }
   }
   if (__pyx_t_8) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_8); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   } else {
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_unit_map, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_unit_map, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":58
+  /* "Code/fast_pathfinding.pyx":58
  *         self.team_map = self.init_unit_map()
  *         self.unit_map = self.init_unit_map()
  *         self.aura_map = self.init_aura_map()             # <<<<<<<<<<<<<<
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_aura_map); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_init_aura_map); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_8 = NULL;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
-    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_1);
+  if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+    __pyx_t_8 = PyMethod_GET_SELF(__pyx_t_2);
     if (likely(__pyx_t_8)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_1, function);
+      __Pyx_DECREF_SET(__pyx_t_2, function);
     }
   }
   if (__pyx_t_8) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_8); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   } else {
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_aura_map, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_aura_map, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":59
+  /* "Code/fast_pathfinding.pyx":59
  *         self.unit_map = self.init_unit_map()
  *         self.aura_map = self.init_aura_map()
  *         self.known_auras = {} # Key: Aura, Value: Set of positions             # <<<<<<<<<<<<<<
  * 
  *     def init_unit_map(self):
  */
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_known_auras, __pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_1);
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_known_auras, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":47
+  /* "Code/fast_pathfinding.pyx":47
  * class Grid_Manager(object):
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']
  *     def __init__(self, tilemap):             # <<<<<<<<<<<<<<
@@ -2714,7 +2717,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager___init__(CYTHO
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":61
+/* "Code/fast_pathfinding.pyx":61
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  * 
  *     def init_unit_map(self):             # <<<<<<<<<<<<<<
@@ -2753,7 +2756,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_unit_map", 0);
 
-  /* "Code\fast_pathfinding.pyx":64
+  /* "Code/fast_pathfinding.pyx":64
  *         cdef int x, y
  *         cdef list cells
  *         cells = []             # <<<<<<<<<<<<<<
@@ -2765,7 +2768,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
   __pyx_v_cells = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":65
+  /* "Code/fast_pathfinding.pyx":65
  *         cdef list cells
  *         cells = []
  *         for x in range(self.gridWidth):             # <<<<<<<<<<<<<<
@@ -2779,7 +2782,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_x = __pyx_t_3;
 
-    /* "Code\fast_pathfinding.pyx":66
+    /* "Code/fast_pathfinding.pyx":66
  *         cells = []
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):             # <<<<<<<<<<<<<<
@@ -2793,7 +2796,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
     for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
       __pyx_v_y = __pyx_t_5;
 
-      /* "Code\fast_pathfinding.pyx":67
+      /* "Code/fast_pathfinding.pyx":67
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):
  *                 cells.append(None)             # <<<<<<<<<<<<<<
@@ -2804,7 +2807,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
     }
   }
 
-  /* "Code\fast_pathfinding.pyx":68
+  /* "Code/fast_pathfinding.pyx":68
  *             for y in range(self.gridHeight):
  *                 cells.append(None)
  *         return cells             # <<<<<<<<<<<<<<
@@ -2816,7 +2819,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
   __pyx_r = __pyx_v_cells;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":61
+  /* "Code/fast_pathfinding.pyx":61
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  * 
  *     def init_unit_map(self):             # <<<<<<<<<<<<<<
@@ -2836,7 +2839,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_2init_unit_map
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":70
+/* "Code/fast_pathfinding.pyx":70
  *         return cells
  * 
  *     def init_aura_map(self):             # <<<<<<<<<<<<<<
@@ -2875,7 +2878,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_aura_map", 0);
 
-  /* "Code\fast_pathfinding.pyx":73
+  /* "Code/fast_pathfinding.pyx":73
  *         cdef int x, y
  *         cdef list cells
  *         cells = []             # <<<<<<<<<<<<<<
@@ -2887,7 +2890,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
   __pyx_v_cells = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":74
+  /* "Code/fast_pathfinding.pyx":74
  *         cdef list cells
  *         cells = []
  *         for x in range(self.gridWidth):             # <<<<<<<<<<<<<<
@@ -2901,7 +2904,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_x = __pyx_t_3;
 
-    /* "Code\fast_pathfinding.pyx":75
+    /* "Code/fast_pathfinding.pyx":75
  *         cells = []
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):             # <<<<<<<<<<<<<<
@@ -2915,7 +2918,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
     for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
       __pyx_v_y = __pyx_t_5;
 
-      /* "Code\fast_pathfinding.pyx":76
+      /* "Code/fast_pathfinding.pyx":76
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):
  *                 cells.append(set())             # <<<<<<<<<<<<<<
@@ -2929,7 +2932,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
     }
   }
 
-  /* "Code\fast_pathfinding.pyx":77
+  /* "Code/fast_pathfinding.pyx":77
  *             for y in range(self.gridHeight):
  *                 cells.append(set())
  *         return cells             # <<<<<<<<<<<<<<
@@ -2941,7 +2944,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
   __pyx_r = __pyx_v_cells;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":70
+  /* "Code/fast_pathfinding.pyx":70
  *         return cells
  * 
  *     def init_aura_map(self):             # <<<<<<<<<<<<<<
@@ -2961,7 +2964,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_4init_aura_map
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":79
+/* "Code/fast_pathfinding.pyx":79
  *         return cells
  * 
  *     def set_unit_node(self, tuple pos, unit):             # <<<<<<<<<<<<<<
@@ -3059,7 +3062,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_unit_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":81
+  /* "Code/fast_pathfinding.pyx":81
  *     def set_unit_node(self, tuple pos, unit):
  *         cdef int idx
  *         idx = pos[0] * self.gridHeight + pos[1]             # <<<<<<<<<<<<<<
@@ -3092,7 +3095,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_idx = __pyx_t_4;
 
-  /* "Code\fast_pathfinding.pyx":82
+  /* "Code/fast_pathfinding.pyx":82
  *         cdef int idx
  *         idx = pos[0] * self.gridHeight + pos[1]
  *         self.unit_map[idx] = unit             # <<<<<<<<<<<<<<
@@ -3104,7 +3107,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   if (unlikely(__Pyx_SetItemInt(__pyx_t_1, __pyx_v_idx, __pyx_v_unit, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":83
+  /* "Code/fast_pathfinding.pyx":83
  *         idx = pos[0] * self.gridHeight + pos[1]
  *         self.unit_map[idx] = unit
  *         if unit:             # <<<<<<<<<<<<<<
@@ -3114,7 +3117,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_unit); if (unlikely(__pyx_t_5 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 83; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_5) {
 
-    /* "Code\fast_pathfinding.pyx":84
+    /* "Code/fast_pathfinding.pyx":84
  *         self.unit_map[idx] = unit
  *         if unit:
  *             self.team_map[idx] = unit.team             # <<<<<<<<<<<<<<
@@ -3129,7 +3132,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":83
+    /* "Code/fast_pathfinding.pyx":83
  *         idx = pos[0] * self.gridHeight + pos[1]
  *         self.unit_map[idx] = unit
  *         if unit:             # <<<<<<<<<<<<<<
@@ -3139,7 +3142,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
     goto __pyx_L3;
   }
 
-  /* "Code\fast_pathfinding.pyx":86
+  /* "Code/fast_pathfinding.pyx":86
  *             self.team_map[idx] = unit.team
  *         else:
  *             self.team_map[idx] = None             # <<<<<<<<<<<<<<
@@ -3154,7 +3157,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   }
   __pyx_L3:;
 
-  /* "Code\fast_pathfinding.pyx":79
+  /* "Code/fast_pathfinding.pyx":79
  *         return cells
  * 
  *     def set_unit_node(self, tuple pos, unit):             # <<<<<<<<<<<<<<
@@ -3177,7 +3180,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_6set_unit_node
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":88
+/* "Code/fast_pathfinding.pyx":88
  *             self.team_map[idx] = None
  * 
  *     def get_unit_node(self, pos):             # <<<<<<<<<<<<<<
@@ -3259,7 +3262,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_8get_unit_node
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_unit_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":89
+  /* "Code/fast_pathfinding.pyx":89
  * 
  *     def get_unit_node(self, pos):
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]             # <<<<<<<<<<<<<<
@@ -3291,7 +3294,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_8get_unit_node
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":88
+  /* "Code/fast_pathfinding.pyx":88
  *             self.team_map[idx] = None
  * 
  *     def get_unit_node(self, pos):             # <<<<<<<<<<<<<<
@@ -3313,7 +3316,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_8get_unit_node
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":91
+/* "Code/fast_pathfinding.pyx":91
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  *     def get_team_node(self, pos):             # <<<<<<<<<<<<<<
@@ -3395,7 +3398,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_10get_team_nod
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_team_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":92
+  /* "Code/fast_pathfinding.pyx":92
  * 
  *     def get_team_node(self, pos):
  *         return self.team_map[pos[0] * self.gridHeight + pos[1]]             # <<<<<<<<<<<<<<
@@ -3427,7 +3430,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_10get_team_nod
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":91
+  /* "Code/fast_pathfinding.pyx":91
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  *     def get_team_node(self, pos):             # <<<<<<<<<<<<<<
@@ -3449,7 +3452,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_10get_team_nod
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":95
+/* "Code/fast_pathfinding.pyx":95
  * 
  *     # === For Auras ===
  *     def reset_aura(self, aura):             # <<<<<<<<<<<<<<
@@ -3529,7 +3532,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_12reset_aura(C
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("reset_aura", 0);
 
-  /* "Code\fast_pathfinding.pyx":96
+  /* "Code/fast_pathfinding.pyx":96
  *     # === For Auras ===
  *     def reset_aura(self, aura):
  *         self.known_auras[aura] = set()             # <<<<<<<<<<<<<<
@@ -3544,7 +3547,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_12reset_aura(C
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":95
+  /* "Code/fast_pathfinding.pyx":95
  * 
  *     # === For Auras ===
  *     def reset_aura(self, aura):             # <<<<<<<<<<<<<<
@@ -3566,7 +3569,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_12reset_aura(C
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":98
+/* "Code/fast_pathfinding.pyx":98
  *         self.known_auras[aura] = set()
  * 
  *     def add_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
@@ -3663,7 +3666,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_14add_aura_nod
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add_aura_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":99
+  /* "Code/fast_pathfinding.pyx":99
  * 
  *     def add_aura_node(self, tuple pos, aura):
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].add(aura)             # <<<<<<<<<<<<<<
@@ -3728,7 +3731,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_14add_aura_nod
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":100
+  /* "Code/fast_pathfinding.pyx":100
  *     def add_aura_node(self, tuple pos, aura):
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].add(aura)
  *         self.known_auras[aura].add(pos)             # <<<<<<<<<<<<<<
@@ -3770,7 +3773,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_14add_aura_nod
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":98
+  /* "Code/fast_pathfinding.pyx":98
  *         self.known_auras[aura] = set()
  * 
  *     def add_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
@@ -3795,7 +3798,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_14add_aura_nod
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":102
+/* "Code/fast_pathfinding.pyx":102
  *         self.known_auras[aura].add(pos)
  * 
  *     def remove_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
@@ -3892,7 +3895,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_16remove_aura_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("remove_aura_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":103
+  /* "Code/fast_pathfinding.pyx":103
  * 
  *     def remove_aura_node(self, tuple pos, aura):
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)             # <<<<<<<<<<<<<<
@@ -3957,7 +3960,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_16remove_aura_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":102
+  /* "Code/fast_pathfinding.pyx":102
  *         self.known_auras[aura].add(pos)
  * 
  *     def remove_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
@@ -3982,7 +3985,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_16remove_aura_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":105
+/* "Code/fast_pathfinding.pyx":105
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  *     def get_aura_positions(self, aura):             # <<<<<<<<<<<<<<
@@ -4062,7 +4065,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_18get_aura_pos
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_aura_positions", 0);
 
-  /* "Code\fast_pathfinding.pyx":106
+  /* "Code/fast_pathfinding.pyx":106
  * 
  *     def get_aura_positions(self, aura):
  *         return self.known_auras[aura]             # <<<<<<<<<<<<<<
@@ -4079,7 +4082,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_18get_aura_pos
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":105
+  /* "Code/fast_pathfinding.pyx":105
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  *     def get_aura_positions(self, aura):             # <<<<<<<<<<<<<<
@@ -4099,7 +4102,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_18get_aura_pos
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":108
+/* "Code/fast_pathfinding.pyx":108
  *         return self.known_auras[aura]
  * 
  *     def get_aura_node(self, pos):             # <<<<<<<<<<<<<<
@@ -4181,7 +4184,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_20get_aura_nod
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_aura_node", 0);
 
-  /* "Code\fast_pathfinding.pyx":109
+  /* "Code/fast_pathfinding.pyx":109
  * 
  *     def get_aura_node(self, pos):
  *         return self.aura_map[pos[0] * self.gridHeight + pos[1]]             # <<<<<<<<<<<<<<
@@ -4213,7 +4216,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_20get_aura_nod
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":108
+  /* "Code/fast_pathfinding.pyx":108
  *         return self.known_auras[aura]
  * 
  *     def get_aura_node(self, pos):             # <<<<<<<<<<<<<<
@@ -4235,12 +4238,12 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_20get_aura_nod
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":112
+/* "Code/fast_pathfinding.pyx":112
  * 
  *     # === For Movement ===
  *     def get_grid(self, unit):             # <<<<<<<<<<<<<<
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  */
 
 /* Python wrapper */
@@ -4318,11 +4321,11 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_22get_grid(CYT
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_grid", 0);
 
-  /* "Code\fast_pathfinding.pyx":113
+  /* "Code/fast_pathfinding.pyx":113
  *     # === For Movement ===
  *     def get_grid(self, unit):
  *         if 'flying' in unit.status_bundle:             # <<<<<<<<<<<<<<
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  *         elif 'fleet_of_foot' in unit.status_bundle:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_unit, __pyx_n_s_status_bundle); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 113; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4332,86 +4335,92 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_22get_grid(CYT
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "Code\fast_pathfinding.pyx":114
+    /* "Code/fast_pathfinding.pyx":114
  *     def get_grid(self, unit):
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]             # <<<<<<<<<<<<<<
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]             # <<<<<<<<<<<<<<
  *         elif 'fleet_of_foot' in unit.status_bundle:
- *             return self.grids[CONSTANTS['fleet_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['fleet_mcost_column']]
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_CONSTANTS); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_cf); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyObject_GetItem(__pyx_t_4, __pyx_n_s_flying_mcost_column); if (unlikely(__pyx_t_5 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_CONSTANTS); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyObject_GetItem(__pyx_t_1, __pyx_t_5); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_4 = PyObject_GetItem(__pyx_t_5, __pyx_n_s_flying_mcost_column); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = PyObject_GetItem(__pyx_t_1, __pyx_t_4); if (unlikely(__pyx_t_5 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_r = __pyx_t_4;
-    __pyx_t_4 = 0;
-    goto __pyx_L0;
-
-    /* "Code\fast_pathfinding.pyx":113
- *     # === For Movement ===
- *     def get_grid(self, unit):
- *         if 'flying' in unit.status_bundle:             # <<<<<<<<<<<<<<
- *             return self.grids[CONSTANTS['flying_mcost_column']]
- *         elif 'fleet_of_foot' in unit.status_bundle:
- */
-  }
-
-  /* "Code\fast_pathfinding.pyx":115
- *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
- *         elif 'fleet_of_foot' in unit.status_bundle:             # <<<<<<<<<<<<<<
- *             return self.grids[CONSTANTS['fleet_mcost_column']]
- *         else:
- */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_unit, __pyx_n_s_status_bundle); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 115; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_fleet_of_foot, __pyx_t_4, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 115; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_2 = (__pyx_t_3 != 0);
-  if (__pyx_t_2) {
-
-    /* "Code\fast_pathfinding.pyx":116
- *             return self.grids[CONSTANTS['flying_mcost_column']]
- *         elif 'fleet_of_foot' in unit.status_bundle:
- *             return self.grids[CONSTANTS['fleet_mcost_column']]             # <<<<<<<<<<<<<<
- *         else:
- *             return self.grids[unit.movement_group]
- */
-    __Pyx_XDECREF(__pyx_r);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_CONSTANTS); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = PyObject_GetItem(__pyx_t_5, __pyx_n_s_fleet_mcost_column); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyObject_GetItem(__pyx_t_4, __pyx_t_1); if (unlikely(__pyx_t_5 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
-    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_r = __pyx_t_5;
     __pyx_t_5 = 0;
     goto __pyx_L0;
 
-    /* "Code\fast_pathfinding.pyx":115
+    /* "Code/fast_pathfinding.pyx":113
+ *     # === For Movement ===
+ *     def get_grid(self, unit):
+ *         if 'flying' in unit.status_bundle:             # <<<<<<<<<<<<<<
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
+ *         elif 'fleet_of_foot' in unit.status_bundle:
+ */
+  }
+
+  /* "Code/fast_pathfinding.pyx":115
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  *         elif 'fleet_of_foot' in unit.status_bundle:             # <<<<<<<<<<<<<<
- *             return self.grids[CONSTANTS['fleet_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['fleet_mcost_column']]
+ *         else:
+ */
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_unit, __pyx_n_s_status_bundle); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 115; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_fleet_of_foot, __pyx_t_5, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 115; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_2 = (__pyx_t_3 != 0);
+  if (__pyx_t_2) {
+
+    /* "Code/fast_pathfinding.pyx":116
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
+ *         elif 'fleet_of_foot' in unit.status_bundle:
+ *             return self.grids[cf.CONSTANTS['fleet_mcost_column']]             # <<<<<<<<<<<<<<
+ *         else:
+ *             return self.grids[unit.movement_group]
+ */
+    __Pyx_XDECREF(__pyx_r);
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_cf); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_CONSTANTS); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = PyObject_GetItem(__pyx_t_1, __pyx_n_s_fleet_mcost_column); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_1 = PyObject_GetItem(__pyx_t_5, __pyx_t_4); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_r = __pyx_t_1;
+    __pyx_t_1 = 0;
+    goto __pyx_L0;
+
+    /* "Code/fast_pathfinding.pyx":115
+ *         if 'flying' in unit.status_bundle:
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
+ *         elif 'fleet_of_foot' in unit.status_bundle:             # <<<<<<<<<<<<<<
+ *             return self.grids[cf.CONSTANTS['fleet_mcost_column']]
  *         else:
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":118
- *             return self.grids[CONSTANTS['fleet_mcost_column']]
+  /* "Code/fast_pathfinding.pyx":118
+ *             return self.grids[cf.CONSTANTS['fleet_mcost_column']]
  *         else:
  *             return self.grids[unit.movement_group]             # <<<<<<<<<<<<<<
  * 
@@ -4419,25 +4428,25 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_22get_grid(CYT
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_unit, __pyx_n_s_movement_group); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grids); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyObject_GetItem(__pyx_t_5, __pyx_t_1); if (unlikely(__pyx_t_4 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_unit, __pyx_n_s_movement_group); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = PyObject_GetItem(__pyx_t_1, __pyx_t_4); if (unlikely(__pyx_t_5 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_r = __pyx_t_4;
-    __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_r = __pyx_t_5;
+    __pyx_t_5 = 0;
     goto __pyx_L0;
   }
 
-  /* "Code\fast_pathfinding.pyx":112
+  /* "Code/fast_pathfinding.pyx":112
  * 
  *     # === For Movement ===
  *     def get_grid(self, unit):             # <<<<<<<<<<<<<<
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  */
 
   /* function exit code */
@@ -4453,7 +4462,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_22get_grid(CYT
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":120
+/* "Code/fast_pathfinding.pyx":120
  *             return self.grids[unit.movement_group]
  * 
  *     def init_grid(self, mode, tilemap):             # <<<<<<<<<<<<<<
@@ -4556,7 +4565,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("init_grid", 0);
 
-  /* "Code\fast_pathfinding.pyx":122
+  /* "Code/fast_pathfinding.pyx":122
  *     def init_grid(self, mode, tilemap):
  *         cdef int x, y, tile_cost
  *         cells = []             # <<<<<<<<<<<<<<
@@ -4568,7 +4577,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
   __pyx_v_cells = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":123
+  /* "Code/fast_pathfinding.pyx":123
  *         cdef int x, y, tile_cost
  *         cells = []
  *         for x in range(self.gridWidth):             # <<<<<<<<<<<<<<
@@ -4582,7 +4591,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_x = __pyx_t_3;
 
-    /* "Code\fast_pathfinding.pyx":124
+    /* "Code/fast_pathfinding.pyx":124
  *         cells = []
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):             # <<<<<<<<<<<<<<
@@ -4596,7 +4605,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
     for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
       __pyx_v_y = __pyx_t_5;
 
-      /* "Code\fast_pathfinding.pyx":125
+      /* "Code/fast_pathfinding.pyx":125
  *         for x in range(self.gridWidth):
  *             for y in range(self.gridHeight):
  *                 tile = tilemap.tiles[(x,y)]             # <<<<<<<<<<<<<<
@@ -4624,7 +4633,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
       __Pyx_XDECREF_SET(__pyx_v_tile, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "Code\fast_pathfinding.pyx":126
+      /* "Code/fast_pathfinding.pyx":126
  *             for y in range(self.gridHeight):
  *                 tile = tilemap.tiles[(x,y)]
  *                 tile_cost = tile.get_mcost(mode)             # <<<<<<<<<<<<<<
@@ -4662,7 +4671,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_v_tile_cost = __pyx_t_9;
 
-      /* "Code\fast_pathfinding.pyx":127
+      /* "Code/fast_pathfinding.pyx":127
  *                 tile = tilemap.tiles[(x,y)]
  *                 tile_cost = tile.get_mcost(mode)
  *                 cells.append(Node(x, y, tile_cost != 99, tile_cost))             # <<<<<<<<<<<<<<
@@ -4699,7 +4708,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
     }
   }
 
-  /* "Code\fast_pathfinding.pyx":128
+  /* "Code/fast_pathfinding.pyx":128
  *                 tile_cost = tile.get_mcost(mode)
  *                 cells.append(Node(x, y, tile_cost != 99, tile_cost))
  *         return cells             # <<<<<<<<<<<<<<
@@ -4711,7 +4720,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
   __pyx_r = __pyx_v_cells;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":120
+  /* "Code/fast_pathfinding.pyx":120
  *             return self.grids[unit.movement_group]
  * 
  *     def init_grid(self, mode, tilemap):             # <<<<<<<<<<<<<<
@@ -4736,7 +4745,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_24init_grid(CY
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":130
+/* "Code/fast_pathfinding.pyx":130
  *         return cells
  * 
  *     def update_tile(self, tile):             # <<<<<<<<<<<<<<
@@ -4826,12 +4835,12 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update_tile", 0);
 
-  /* "Code\fast_pathfinding.pyx":132
+  /* "Code/fast_pathfinding.pyx":132
  *     def update_tile(self, tile):
  *         cdef int x, y, num, cost
  *         x = tile.position[0]             # <<<<<<<<<<<<<<
  *         y = tile.position[1]
- *         for num in range(len(MCOSTDATA['Normal'])):
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tile, __pyx_n_s_position); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 132; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
@@ -4842,11 +4851,11 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_x = __pyx_t_3;
 
-  /* "Code\fast_pathfinding.pyx":133
+  /* "Code/fast_pathfinding.pyx":133
  *         cdef int x, y, num, cost
  *         x = tile.position[0]
  *         y = tile.position[1]             # <<<<<<<<<<<<<<
- *         for num in range(len(MCOSTDATA['Normal'])):
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):
  *             cost = tile.get_mcost(num)
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_tile, __pyx_n_s_position); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 133; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4858,48 +4867,51 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_y = __pyx_t_3;
 
-  /* "Code\fast_pathfinding.pyx":134
+  /* "Code/fast_pathfinding.pyx":134
  *         x = tile.position[0]
  *         y = tile.position[1]
- *         for num in range(len(MCOSTDATA['Normal'])):             # <<<<<<<<<<<<<<
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):             # <<<<<<<<<<<<<<
  *             cost = tile.get_mcost(num)
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_MCOSTDATA); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_GC); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_GetItem(__pyx_t_1, __pyx_n_s_Normal); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_MCOSTDATA); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_4 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyObject_GetItem(__pyx_t_2, __pyx_n_s_Normal); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_4 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_4; __pyx_t_3+=1) {
     __pyx_v_num = __pyx_t_3;
 
-    /* "Code\fast_pathfinding.pyx":135
+    /* "Code/fast_pathfinding.pyx":135
  *         y = tile.position[1]
- *         for num in range(len(MCOSTDATA['Normal'])):
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):
  *             cost = tile.get_mcost(num)             # <<<<<<<<<<<<<<
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tile, __pyx_n_s_get_mcost); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_tile, __pyx_n_s_get_mcost); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_num); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
-    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
-      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_1);
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_2);
       if (likely(__pyx_t_6)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
         __Pyx_INCREF(__pyx_t_6);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_1, function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
       }
     }
     if (!__pyx_t_6) {
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_GOTREF(__pyx_t_2);
+      __Pyx_GOTREF(__pyx_t_1);
     } else {
       __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
@@ -4907,42 +4919,42 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 135; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_cost = __pyx_t_8;
 
-    /* "Code\fast_pathfinding.pyx":136
- *         for num in range(len(MCOSTDATA['Normal'])):
+    /* "Code/fast_pathfinding.pyx":136
+ *         for num in range(len(GC.MCOSTDATA['Normal'])):
  *             cost = tile.get_mcost(num)
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)             # <<<<<<<<<<<<<<
  * 
  *     def draw_grid(self, str grid_name):
  */
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_7 = __Pyx_PyBool_FromLong((__pyx_v_cost != 99)); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_cost); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = PyTuple_New(4); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_GIVEREF(__pyx_t_2);
-    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
-    PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_1);
+    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_6, 3, __pyx_t_5);
-    __pyx_t_2 = 0;
     __pyx_t_1 = 0;
+    __pyx_t_2 = 0;
     __pyx_t_7 = 0;
     __pyx_t_5 = 0;
     __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_4Code_16fast_pathfinding_Node), __pyx_t_6, NULL); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
@@ -4955,25 +4967,25 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_gridHeight); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_Multiply(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_gridHeight); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_6, __pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_6);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_6 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (unlikely(PyObject_SetItem(__pyx_t_7, __pyx_t_6, __pyx_t_5) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 136; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":130
+  /* "Code/fast_pathfinding.pyx":130
  *         return cells
  * 
  *     def update_tile(self, tile):             # <<<<<<<<<<<<<<
@@ -4998,7 +5010,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_26update_tile(
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":138
+/* "Code/fast_pathfinding.pyx":138
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  * 
  *     def draw_grid(self, str grid_name):             # <<<<<<<<<<<<<<
@@ -5093,7 +5105,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("draw_grid", 0);
 
-  /* "Code\fast_pathfinding.pyx":140
+  /* "Code/fast_pathfinding.pyx":140
  *     def draw_grid(self, str grid_name):
  *         cdef int x, y
  *         for y in range(self.gridHeight):             # <<<<<<<<<<<<<<
@@ -5107,7 +5119,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_y = __pyx_t_3;
 
-    /* "Code\fast_pathfinding.pyx":141
+    /* "Code/fast_pathfinding.pyx":141
  *         cdef int x, y
  *         for y in range(self.gridHeight):
  *             for x in range(self.gridWidth):             # <<<<<<<<<<<<<<
@@ -5121,7 +5133,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
     for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
       __pyx_v_x = __pyx_t_5;
 
-      /* "Code\fast_pathfinding.pyx":142
+      /* "Code/fast_pathfinding.pyx":142
  *         for y in range(self.gridHeight):
  *             for x in range(self.gridWidth):
  *                 cell = self.grids[grid_name][x * self.gridHeight + y]             # <<<<<<<<<<<<<<
@@ -5154,7 +5166,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
       __Pyx_XDECREF_SET(__pyx_v_cell, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "Code\fast_pathfinding.pyx":143
+      /* "Code/fast_pathfinding.pyx":143
  *             for x in range(self.gridWidth):
  *                 cell = self.grids[grid_name][x * self.gridHeight + y]
  *                 if cell.reachable:             # <<<<<<<<<<<<<<
@@ -5167,7 +5179,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       if (__pyx_t_9) {
 
-        /* "Code\fast_pathfinding.pyx":144
+        /* "Code/fast_pathfinding.pyx":144
  *                 cell = self.grids[grid_name][x * self.gridHeight + y]
  *                 if cell.reachable:
  *                     print(str(cell.cost) + ' '),             # <<<<<<<<<<<<<<
@@ -5195,7 +5207,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
         if (__Pyx_Print(0, __pyx_t_7, 0) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 144; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-        /* "Code\fast_pathfinding.pyx":143
+        /* "Code/fast_pathfinding.pyx":143
  *             for x in range(self.gridWidth):
  *                 cell = self.grids[grid_name][x * self.gridHeight + y]
  *                 if cell.reachable:             # <<<<<<<<<<<<<<
@@ -5205,7 +5217,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
         goto __pyx_L7;
       }
 
-      /* "Code\fast_pathfinding.pyx":146
+      /* "Code/fast_pathfinding.pyx":146
  *                     print(str(cell.cost) + ' '),
  *                 else:
  *                     print('- '),             # <<<<<<<<<<<<<<
@@ -5218,7 +5230,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
       __pyx_L7:;
     }
 
-    /* "Code\fast_pathfinding.pyx":147
+    /* "Code/fast_pathfinding.pyx":147
  *                 else:
  *                     print('- '),
  *             print('\n'),             # <<<<<<<<<<<<<<
@@ -5228,7 +5240,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
     if (__Pyx_Print(0, __pyx_tuple__5, 0) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 147; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "Code\fast_pathfinding.pyx":138
+  /* "Code/fast_pathfinding.pyx":138
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  * 
  *     def draw_grid(self, str grid_name):             # <<<<<<<<<<<<<<
@@ -5253,7 +5265,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_12Grid_Manager_28draw_grid(CY
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":150
+/* "Code/fast_pathfinding.pyx":150
  * 
  * class AStar(object):
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
@@ -5399,7 +5411,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "Code\fast_pathfinding.pyx":151
+  /* "Code/fast_pathfinding.pyx":151
  * class AStar(object):
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):
  *         self.cells = grid             # <<<<<<<<<<<<<<
@@ -5408,7 +5420,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cells, __pyx_v_grid) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 151; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":152
+  /* "Code/fast_pathfinding.pyx":152
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):
  *         self.cells = grid
  *         self.gridHeight = height             # <<<<<<<<<<<<<<
@@ -5420,7 +5432,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gridHeight, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 152; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":153
+  /* "Code/fast_pathfinding.pyx":153
  *         self.cells = grid
  *         self.gridHeight = height
  *         self.gridWidth = width             # <<<<<<<<<<<<<<
@@ -5432,7 +5444,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gridWidth, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 153; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":154
+  /* "Code/fast_pathfinding.pyx":154
  *         self.gridHeight = height
  *         self.gridWidth = width
  *         self.startposition = startposition             # <<<<<<<<<<<<<<
@@ -5441,7 +5453,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_startposition, __pyx_v_startposition) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 154; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":155
+  /* "Code/fast_pathfinding.pyx":155
  *         self.gridWidth = width
  *         self.startposition = startposition
  *         self.goalposition = goalposition             # <<<<<<<<<<<<<<
@@ -5450,7 +5462,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_goalposition, __pyx_v_goalposition) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 155; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":156
+  /* "Code/fast_pathfinding.pyx":156
  *         self.startposition = startposition
  *         self.goalposition = goalposition
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])             # <<<<<<<<<<<<<<
@@ -5499,7 +5511,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_start, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 156; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":157
+  /* "Code/fast_pathfinding.pyx":157
  *         self.goalposition = goalposition
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1]) if self.goalposition else None             # <<<<<<<<<<<<<<
@@ -5559,7 +5571,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":158
+  /* "Code/fast_pathfinding.pyx":158
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1]) if self.goalposition else None
  *         self.adj_end = self.get_adjacent_cells(self.end) if self.end else None             # <<<<<<<<<<<<<<
@@ -5610,7 +5622,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_adj_end, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 158; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":159
+  /* "Code/fast_pathfinding.pyx":159
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1]) if self.goalposition else None
  *         self.adj_end = self.get_adjacent_cells(self.end) if self.end else None
  *         self.unit_team = unit_team             # <<<<<<<<<<<<<<
@@ -5619,7 +5631,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_unit_team, __pyx_v_unit_team) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 159; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":160
+  /* "Code/fast_pathfinding.pyx":160
  *         self.adj_end = self.get_adjacent_cells(self.end) if self.end else None
  *         self.unit_team = unit_team
  *         self.pass_through = pass_through             # <<<<<<<<<<<<<<
@@ -5631,7 +5643,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pass_through, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 160; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":161
+  /* "Code/fast_pathfinding.pyx":161
  *         self.unit_team = unit_team
  *         self.pass_through = pass_through
  *         self.reset()             # <<<<<<<<<<<<<<
@@ -5660,7 +5672,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":150
+  /* "Code/fast_pathfinding.pyx":150
  * 
  * class AStar(object):
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
@@ -5687,7 +5699,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar___init__(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":163
+/* "Code/fast_pathfinding.pyx":163
  *         self.reset()
  * 
  *     def reset_grid(self):             # <<<<<<<<<<<<<<
@@ -5722,7 +5734,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_2reset_grid(CYTHON_UNU
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("reset_grid", 0);
 
-  /* "Code\fast_pathfinding.pyx":165
+  /* "Code/fast_pathfinding.pyx":165
  *     def reset_grid(self):
  *         cdef Node cell
  *         for cell in self.cells:             # <<<<<<<<<<<<<<
@@ -5775,7 +5787,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_2reset_grid(CYTHON_UNU
     __Pyx_XDECREF_SET(__pyx_v_cell, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":166
+    /* "Code/fast_pathfinding.pyx":166
  *         cdef Node cell
  *         for cell in self.cells:
  *             cell.reset()             # <<<<<<<<<<<<<<
@@ -5784,7 +5796,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_2reset_grid(CYTHON_UNU
  */
     ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Node *)__pyx_v_cell->__pyx_vtab)->reset(__pyx_v_cell, 0);
 
-    /* "Code\fast_pathfinding.pyx":165
+    /* "Code/fast_pathfinding.pyx":165
  *     def reset_grid(self):
  *         cdef Node cell
  *         for cell in self.cells:             # <<<<<<<<<<<<<<
@@ -5794,7 +5806,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_2reset_grid(CYTHON_UNU
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Code\fast_pathfinding.pyx":163
+  /* "Code/fast_pathfinding.pyx":163
  *         self.reset()
  * 
  *     def reset_grid(self):             # <<<<<<<<<<<<<<
@@ -5817,7 +5829,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_2reset_grid(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":168
+/* "Code/fast_pathfinding.pyx":168
  *             cell.reset()
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
@@ -5852,7 +5864,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("reset", 0);
 
-  /* "Code\fast_pathfinding.pyx":169
+  /* "Code/fast_pathfinding.pyx":169
  * 
  *     def reset(self):
  *         self.open = []             # <<<<<<<<<<<<<<
@@ -5864,7 +5876,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_open, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 169; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":170
+  /* "Code/fast_pathfinding.pyx":170
  *     def reset(self):
  *         self.open = []
  *         heapq.heapify(self.open)             # <<<<<<<<<<<<<<
@@ -5906,7 +5918,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":171
+  /* "Code/fast_pathfinding.pyx":171
  *         self.open = []
  *         heapq.heapify(self.open)
  *         self.closed = set()             # <<<<<<<<<<<<<<
@@ -5918,7 +5930,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_closed, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":172
+  /* "Code/fast_pathfinding.pyx":172
  *         heapq.heapify(self.open)
  *         self.closed = set()
  *         self.path = []             # <<<<<<<<<<<<<<
@@ -5930,7 +5942,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_path, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 172; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":173
+  /* "Code/fast_pathfinding.pyx":173
  *         self.closed = set()
  *         self.path = []
  *         self.reset_grid()             # <<<<<<<<<<<<<<
@@ -5959,7 +5971,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":168
+  /* "Code/fast_pathfinding.pyx":168
  *             cell.reset()
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
@@ -5984,7 +5996,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_4reset(CYTHON_UNUSED P
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":175
+/* "Code/fast_pathfinding.pyx":175
  *         self.reset_grid()
  * 
  *     def set_goal_pos(self, goal_pos):             # <<<<<<<<<<<<<<
@@ -6069,7 +6081,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_6set_goal_pos(CYTHON_U
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_goal_pos", 0);
 
-  /* "Code\fast_pathfinding.pyx":176
+  /* "Code/fast_pathfinding.pyx":176
  * 
  *     def set_goal_pos(self, goal_pos):
  *         self.goalposition = goal_pos             # <<<<<<<<<<<<<<
@@ -6078,7 +6090,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_6set_goal_pos(CYTHON_U
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_goalposition, __pyx_v_goal_pos) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 176; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":177
+  /* "Code/fast_pathfinding.pyx":177
  *     def set_goal_pos(self, goal_pos):
  *         self.goalposition = goal_pos
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1])             # <<<<<<<<<<<<<<
@@ -6127,7 +6139,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_6set_goal_pos(CYTHON_U
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 177; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":178
+  /* "Code/fast_pathfinding.pyx":178
  *         self.goalposition = goal_pos
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1])
  *         self.adj_end = self.get_adjacent_cells(self.end)             # <<<<<<<<<<<<<<
@@ -6167,7 +6179,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_6set_goal_pos(CYTHON_U
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_adj_end, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 178; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":175
+  /* "Code/fast_pathfinding.pyx":175
  *         self.reset_grid()
  * 
  *     def set_goal_pos(self, goal_pos):             # <<<<<<<<<<<<<<
@@ -6193,7 +6205,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_6set_goal_pos(CYTHON_U
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":180
+/* "Code/fast_pathfinding.pyx":180
  *         self.adj_end = self.get_adjacent_cells(self.end)
  * 
  *     def get_heuristic(self, Node cell):             # <<<<<<<<<<<<<<
@@ -6289,7 +6301,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_heuristic", 0);
 
-  /* "Code\fast_pathfinding.pyx":185
+  /* "Code/fast_pathfinding.pyx":185
  *         # Get main heuristic
  *         cdef int dx1, dy1, h, dx2, dy2, cross
  *         dx1 = cell.x - self.end.x             # <<<<<<<<<<<<<<
@@ -6311,7 +6323,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_dx1 = __pyx_t_4;
 
-  /* "Code\fast_pathfinding.pyx":186
+  /* "Code/fast_pathfinding.pyx":186
  *         cdef int dx1, dy1, h, dx2, dy2, cross
  *         dx1 = cell.x - self.end.x
  *         dy1 = cell.y - self.end.y             # <<<<<<<<<<<<<<
@@ -6333,7 +6345,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_dy1 = __pyx_t_4;
 
-  /* "Code\fast_pathfinding.pyx":187
+  /* "Code/fast_pathfinding.pyx":187
  *         dx1 = cell.x - self.end.x
  *         dy1 = cell.y - self.end.y
  *         h = abs(dx1) + abs(dy1)             # <<<<<<<<<<<<<<
@@ -6344,7 +6356,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __pyx_t_6 = __Pyx_abs_int(__pyx_v_dy1); 
   __pyx_v_h = (__pyx_t_5 + __pyx_t_6);
 
-  /* "Code\fast_pathfinding.pyx":190
+  /* "Code/fast_pathfinding.pyx":190
  *         # Are we going in direction of goal? -
  *         # Slight nudge in direction that lies along path from start to end
  *         dx2 = self.start.x - self.end.x             # <<<<<<<<<<<<<<
@@ -6369,7 +6381,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_dx2 = __pyx_t_4;
 
-  /* "Code\fast_pathfinding.pyx":191
+  /* "Code/fast_pathfinding.pyx":191
  *         # Slight nudge in direction that lies along path from start to end
  *         dx2 = self.start.x - self.end.x
  *         dy2 = self.start.y - self.end.y             # <<<<<<<<<<<<<<
@@ -6394,7 +6406,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_dy2 = __pyx_t_4;
 
-  /* "Code\fast_pathfinding.pyx":192
+  /* "Code/fast_pathfinding.pyx":192
  *         dx2 = self.start.x - self.end.x
  *         dy2 = self.start.y - self.end.y
  *         cross = abs(dx1 * dy2 - dx2 * dy1)             # <<<<<<<<<<<<<<
@@ -6404,7 +6416,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __pyx_t_6 = __Pyx_abs_int(((__pyx_v_dx1 * __pyx_v_dy2) - (__pyx_v_dx2 * __pyx_v_dy1))); 
   __pyx_v_cross = __pyx_t_6;
 
-  /* "Code\fast_pathfinding.pyx":193
+  /* "Code/fast_pathfinding.pyx":193
  *         dy2 = self.start.y - self.end.y
  *         cross = abs(dx1 * dy2 - dx2 * dy1)
  *         return h + cross*.001             # <<<<<<<<<<<<<<
@@ -6418,7 +6430,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":180
+  /* "Code/fast_pathfinding.pyx":180
  *         self.adj_end = self.get_adjacent_cells(self.end)
  * 
  *     def get_heuristic(self, Node cell):             # <<<<<<<<<<<<<<
@@ -6439,7 +6451,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_8get_heuristic(CYTHON_
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":195
+/* "Code/fast_pathfinding.pyx":195
  *         return h + cross*.001
  * 
  *     def get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -6530,7 +6542,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_10get_cell(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_cell", 0);
 
-  /* "Code\fast_pathfinding.pyx":196
+  /* "Code/fast_pathfinding.pyx":196
  * 
  *     def get_cell(self, int x, int y):
  *         return self.cells[x * self.gridHeight + y]             # <<<<<<<<<<<<<<
@@ -6562,7 +6574,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_10get_cell(CYTHON_UNUS
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":195
+  /* "Code/fast_pathfinding.pyx":195
  *         return h + cross*.001
  * 
  *     def get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -6584,7 +6596,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_10get_cell(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":198
+/* "Code/fast_pathfinding.pyx":198
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     def get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
@@ -6678,7 +6690,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_adjacent_cells", 0);
 
-  /* "Code\fast_pathfinding.pyx":202
+  /* "Code/fast_pathfinding.pyx":202
  *         Returns adjacent cells to a cell. Clockwise starting from the one on
  *         the right"""
  *         cells = []             # <<<<<<<<<<<<<<
@@ -6690,7 +6702,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __pyx_v_cells = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":203
+  /* "Code/fast_pathfinding.pyx":203
  *         the right"""
  *         cells = []
  *         if cell.x < self.gridWidth-1:             # <<<<<<<<<<<<<<
@@ -6711,7 +6723,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_4) {
 
-    /* "Code\fast_pathfinding.pyx":204
+    /* "Code/fast_pathfinding.pyx":204
  *         cells = []
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))             # <<<<<<<<<<<<<<
@@ -6754,7 +6766,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
     __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_2); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 204; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "Code\fast_pathfinding.pyx":203
+    /* "Code/fast_pathfinding.pyx":203
  *         the right"""
  *         cells = []
  *         if cell.x < self.gridWidth-1:             # <<<<<<<<<<<<<<
@@ -6763,7 +6775,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":205
+  /* "Code/fast_pathfinding.pyx":205
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:             # <<<<<<<<<<<<<<
@@ -6773,7 +6785,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __pyx_t_4 = ((__pyx_v_cell->y > 0) != 0);
   if (__pyx_t_4) {
 
-    /* "Code\fast_pathfinding.pyx":206
+    /* "Code/fast_pathfinding.pyx":206
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))             # <<<<<<<<<<<<<<
@@ -6816,7 +6828,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
     __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_2); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 206; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "Code\fast_pathfinding.pyx":205
+    /* "Code/fast_pathfinding.pyx":205
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:             # <<<<<<<<<<<<<<
@@ -6825,7 +6837,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":207
+  /* "Code/fast_pathfinding.pyx":207
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:             # <<<<<<<<<<<<<<
@@ -6835,7 +6847,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __pyx_t_4 = ((__pyx_v_cell->x > 0) != 0);
   if (__pyx_t_4) {
 
-    /* "Code\fast_pathfinding.pyx":208
+    /* "Code/fast_pathfinding.pyx":208
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))             # <<<<<<<<<<<<<<
@@ -6878,7 +6890,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
     __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_2); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 208; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "Code\fast_pathfinding.pyx":207
+    /* "Code/fast_pathfinding.pyx":207
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:             # <<<<<<<<<<<<<<
@@ -6887,7 +6899,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":209
+  /* "Code/fast_pathfinding.pyx":209
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:             # <<<<<<<<<<<<<<
@@ -6908,7 +6920,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "Code\fast_pathfinding.pyx":210
+    /* "Code/fast_pathfinding.pyx":210
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:
  *             cells.append(self.get_cell(cell.x, cell.y+1))             # <<<<<<<<<<<<<<
@@ -6951,7 +6963,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
     __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_3); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 210; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "Code\fast_pathfinding.pyx":209
+    /* "Code/fast_pathfinding.pyx":209
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:             # <<<<<<<<<<<<<<
@@ -6960,7 +6972,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":211
+  /* "Code/fast_pathfinding.pyx":211
  *         if cell.y < self.gridHeight-1:
  *             cells.append(self.get_cell(cell.x, cell.y+1))
  *         return cells             # <<<<<<<<<<<<<<
@@ -6972,7 +6984,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   __pyx_r = __pyx_v_cells;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":198
+  /* "Code/fast_pathfinding.pyx":198
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     def get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
@@ -6997,7 +7009,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_12get_adjacent_cells(C
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":213
+/* "Code/fast_pathfinding.pyx":213
  *         return cells
  * 
  *     def update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
@@ -7095,7 +7107,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update_cell", 0);
 
-  /* "Code\fast_pathfinding.pyx":217
+  /* "Code/fast_pathfinding.pyx":217
  *         # g is true distance between this cell and starting position
  *         # f is simply them added together. # c.x, c.y or cell.x, cell.y
  *         adj.g = cell.g + adj.cost             # <<<<<<<<<<<<<<
@@ -7104,7 +7116,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
  */
   __pyx_v_adj->g = (__pyx_v_cell->g + __pyx_v_adj->cost);
 
-  /* "Code\fast_pathfinding.pyx":218
+  /* "Code/fast_pathfinding.pyx":218
  *         # f is simply them added together. # c.x, c.y or cell.x, cell.y
  *         adj.g = cell.g + adj.cost
  *         adj.h = self.get_heuristic(adj)             # <<<<<<<<<<<<<<
@@ -7142,7 +7154,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_adj->h = __pyx_t_5;
 
-  /* "Code\fast_pathfinding.pyx":219
+  /* "Code/fast_pathfinding.pyx":219
  *         adj.g = cell.g + adj.cost
  *         adj.h = self.get_heuristic(adj)
  *         adj.parent = cell             # <<<<<<<<<<<<<<
@@ -7155,7 +7167,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
   __Pyx_DECREF(((PyObject *)__pyx_v_adj->parent));
   __pyx_v_adj->parent = __pyx_v_cell;
 
-  /* "Code\fast_pathfinding.pyx":220
+  /* "Code/fast_pathfinding.pyx":220
  *         adj.h = self.get_heuristic(adj)
  *         adj.parent = cell
  *         adj.f = adj.h + adj.g             # <<<<<<<<<<<<<<
@@ -7164,7 +7176,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
  */
   __pyx_v_adj->f = (__pyx_v_adj->h + __pyx_v_adj->g);
 
-  /* "Code\fast_pathfinding.pyx":213
+  /* "Code/fast_pathfinding.pyx":213
  *         return cells
  * 
  *     def update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
@@ -7188,7 +7200,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_14update_cell(CYTHON_U
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":222
+/* "Code/fast_pathfinding.pyx":222
  *         adj.f = adj.h + adj.g
  * 
  *     def return_path(self, Node cell):             # <<<<<<<<<<<<<<
@@ -7278,7 +7290,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
   __Pyx_RefNannySetupContext("return_path", 0);
   __Pyx_INCREF((PyObject *)__pyx_v_cell);
 
-  /* "Code\fast_pathfinding.pyx":223
+  /* "Code/fast_pathfinding.pyx":223
  * 
  *     def return_path(self, Node cell):
  *         path = []             # <<<<<<<<<<<<<<
@@ -7290,7 +7302,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
   __pyx_v_path = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":224
+  /* "Code/fast_pathfinding.pyx":224
  *     def return_path(self, Node cell):
  *         path = []
  *         while cell:             # <<<<<<<<<<<<<<
@@ -7301,7 +7313,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
     __pyx_t_2 = __Pyx_PyObject_IsTrue(((PyObject *)__pyx_v_cell)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 224; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     if (!__pyx_t_2) break;
 
-    /* "Code\fast_pathfinding.pyx":225
+    /* "Code/fast_pathfinding.pyx":225
  *         path = []
  *         while cell:
  *             path.append((cell.x, cell.y))             # <<<<<<<<<<<<<<
@@ -7323,7 +7335,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
     __pyx_t_5 = __Pyx_PyList_Append(__pyx_v_path, __pyx_t_4); if (unlikely(__pyx_t_5 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 225; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "Code\fast_pathfinding.pyx":226
+    /* "Code/fast_pathfinding.pyx":226
  *         while cell:
  *             path.append((cell.x, cell.y))
  *             cell = cell.parent             # <<<<<<<<<<<<<<
@@ -7336,7 +7348,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
     __pyx_t_4 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":227
+  /* "Code/fast_pathfinding.pyx":227
  *             path.append((cell.x, cell.y))
  *             cell = cell.parent
  *         return path             # <<<<<<<<<<<<<<
@@ -7348,7 +7360,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
   __pyx_r = __pyx_v_path;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":222
+  /* "Code/fast_pathfinding.pyx":222
  *         adj.f = adj.h + adj.g
  * 
  *     def return_path(self, Node cell):             # <<<<<<<<<<<<<<
@@ -7371,7 +7383,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_16return_path(CYTHON_U
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":229
+/* "Code/fast_pathfinding.pyx":229
  *         return path
  * 
  *     def process(self, gameStateObj, bint adj_good_enough=False, bint ally_block=False, limit=None):             # <<<<<<<<<<<<<<
@@ -7506,7 +7518,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("process", 0);
 
-  /* "Code\fast_pathfinding.pyx":234
+  /* "Code/fast_pathfinding.pyx":234
  *         cdef list adj_cells
  *         # add starting cell to open heap queue
  *         heapq.heappush(self.open, (self.start.f, self.start))             # <<<<<<<<<<<<<<
@@ -7564,7 +7576,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":235
+  /* "Code/fast_pathfinding.pyx":235
  *         # add starting cell to open heap queue
  *         heapq.heappush(self.open, (self.start.f, self.start))
  *         while self.open:             # <<<<<<<<<<<<<<
@@ -7578,7 +7590,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (!__pyx_t_8) break;
 
-    /* "Code\fast_pathfinding.pyx":237
+    /* "Code/fast_pathfinding.pyx":237
  *         while self.open:
  *             # pop cell from heap queue
  *             f, cell = heapq.heappop(self.open)             # <<<<<<<<<<<<<<
@@ -7675,7 +7687,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __Pyx_XDECREF_SET(__pyx_v_cell, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_t_2));
     __pyx_t_2 = 0;
 
-    /* "Code\fast_pathfinding.pyx":239
+    /* "Code/fast_pathfinding.pyx":239
  *             f, cell = heapq.heappop(self.open)
  *             # add cell to closed set so we don't process it twice
  *             self.closed.add(cell)             # <<<<<<<<<<<<<<
@@ -7714,7 +7726,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":243
+    /* "Code/fast_pathfinding.pyx":243
  *             # Uses f, not g, because g will cut off if first greedy path fails
  *             # f only cuts off if all cells are bad
  *             if limit and cell.f > limit:             # <<<<<<<<<<<<<<
@@ -7737,7 +7749,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __pyx_L8_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "Code\fast_pathfinding.pyx":244
+      /* "Code/fast_pathfinding.pyx":244
  *             # f only cuts off if all cells are bad
  *             if limit and cell.f > limit:
  *                 break             # <<<<<<<<<<<<<<
@@ -7746,7 +7758,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
       goto __pyx_L4_break;
 
-      /* "Code\fast_pathfinding.pyx":243
+      /* "Code/fast_pathfinding.pyx":243
  *             # Uses f, not g, because g will cut off if first greedy path fails
  *             # f only cuts off if all cells are bad
  *             if limit and cell.f > limit:             # <<<<<<<<<<<<<<
@@ -7755,7 +7767,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
     }
 
-    /* "Code\fast_pathfinding.pyx":246
+    /* "Code/fast_pathfinding.pyx":246
  *                 break
  *             # if ending cell, display found path
  *             if cell is self.end or (adj_good_enough and cell in self.adj_end):             # <<<<<<<<<<<<<<
@@ -7787,7 +7799,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __pyx_L11_bool_binop_done:;
     if (__pyx_t_8) {
 
-      /* "Code\fast_pathfinding.pyx":247
+      /* "Code/fast_pathfinding.pyx":247
  *             # if ending cell, display found path
  *             if cell is self.end or (adj_good_enough and cell in self.adj_end):
  *                 self.path = self.return_path(cell)             # <<<<<<<<<<<<<<
@@ -7824,7 +7836,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_path, __pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 247; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "Code\fast_pathfinding.pyx":248
+      /* "Code/fast_pathfinding.pyx":248
  *             if cell is self.end or (adj_good_enough and cell in self.adj_end):
  *                 self.path = self.return_path(cell)
  *                 break             # <<<<<<<<<<<<<<
@@ -7833,7 +7845,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
       goto __pyx_L4_break;
 
-      /* "Code\fast_pathfinding.pyx":246
+      /* "Code/fast_pathfinding.pyx":246
  *                 break
  *             # if ending cell, display found path
  *             if cell is self.end or (adj_good_enough and cell in self.adj_end):             # <<<<<<<<<<<<<<
@@ -7842,7 +7854,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
     }
 
-    /* "Code\fast_pathfinding.pyx":250
+    /* "Code/fast_pathfinding.pyx":250
  *                 break
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)             # <<<<<<<<<<<<<<
@@ -7880,7 +7892,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
     __Pyx_XDECREF_SET(__pyx_v_adj_cells, ((PyObject*)__pyx_t_5));
     __pyx_t_5 = 0;
 
-    /* "Code\fast_pathfinding.pyx":251
+    /* "Code/fast_pathfinding.pyx":251
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:             # <<<<<<<<<<<<<<
@@ -7903,7 +7915,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
       __Pyx_XDECREF_SET(__pyx_v_c, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "Code\fast_pathfinding.pyx":252
+      /* "Code/fast_pathfinding.pyx":252
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:             # <<<<<<<<<<<<<<
@@ -7928,7 +7940,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
       __pyx_L17_bool_binop_done:;
       if (__pyx_t_8) {
 
-        /* "Code\fast_pathfinding.pyx":253
+        /* "Code/fast_pathfinding.pyx":253
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = gameStateObj.grid_manager.get_team_node((c.x, c.y))             # <<<<<<<<<<<<<<
@@ -7981,7 +7993,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
         __Pyx_XDECREF_SET(__pyx_v_unit_team, __pyx_t_1);
         __pyx_t_1 = 0;
 
-        /* "Code\fast_pathfinding.pyx":254
+        /* "Code/fast_pathfinding.pyx":254
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = gameStateObj.grid_manager.get_team_node((c.x, c.y))
  *                     if not unit_team or (not ally_block and compare_teams(self.unit_team, unit_team)) or self.pass_through:             # <<<<<<<<<<<<<<
@@ -8020,7 +8032,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
         __pyx_L20_bool_binop_done:;
         if (__pyx_t_8) {
 
-          /* "Code\fast_pathfinding.pyx":255
+          /* "Code/fast_pathfinding.pyx":255
  *                     unit_team = gameStateObj.grid_manager.get_team_node((c.x, c.y))
  *                     if not unit_team or (not ally_block and compare_teams(self.unit_team, unit_team)) or self.pass_through:
  *                         if (c.f, c) in self.open:             # <<<<<<<<<<<<<<
@@ -8045,7 +8057,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
           __pyx_t_11 = (__pyx_t_8 != 0);
           if (__pyx_t_11) {
 
-            /* "Code\fast_pathfinding.pyx":259
+            /* "Code/fast_pathfinding.pyx":259
  *                             # better than the one previously found for this adj
  *                             # cell.
  *                             if c.g > cell.g + c.cost:             # <<<<<<<<<<<<<<
@@ -8069,7 +8081,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
             if (__pyx_t_11) {
 
-              /* "Code\fast_pathfinding.pyx":260
+              /* "Code/fast_pathfinding.pyx":260
  *                             # cell.
  *                             if c.g > cell.g + c.cost:
  *                                 self.update_cell(c, cell)             # <<<<<<<<<<<<<<
@@ -8107,7 +8119,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
               __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-              /* "Code\fast_pathfinding.pyx":261
+              /* "Code/fast_pathfinding.pyx":261
  *                             if c.g > cell.g + c.cost:
  *                                 self.update_cell(c, cell)
  *                                 heapq.heappush(self.open, (c.f, c))             # <<<<<<<<<<<<<<
@@ -8160,7 +8172,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
               __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
               __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-              /* "Code\fast_pathfinding.pyx":259
+              /* "Code/fast_pathfinding.pyx":259
  *                             # better than the one previously found for this adj
  *                             # cell.
  *                             if c.g > cell.g + c.cost:             # <<<<<<<<<<<<<<
@@ -8169,7 +8181,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
             }
 
-            /* "Code\fast_pathfinding.pyx":255
+            /* "Code/fast_pathfinding.pyx":255
  *                     unit_team = gameStateObj.grid_manager.get_team_node((c.x, c.y))
  *                     if not unit_team or (not ally_block and compare_teams(self.unit_team, unit_team)) or self.pass_through:
  *                         if (c.f, c) in self.open:             # <<<<<<<<<<<<<<
@@ -8179,7 +8191,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
             goto __pyx_L24;
           }
 
-          /* "Code\fast_pathfinding.pyx":263
+          /* "Code/fast_pathfinding.pyx":263
  *                                 heapq.heappush(self.open, (c.f, c))
  *                         else:
  *                             self.update_cell(c, cell)             # <<<<<<<<<<<<<<
@@ -8218,7 +8230,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-            /* "Code\fast_pathfinding.pyx":265
+            /* "Code/fast_pathfinding.pyx":265
  *                             self.update_cell(c, cell)
  *                             # Add adj cell to open list
  *                             heapq.heappush(self.open, (c.f, c))             # <<<<<<<<<<<<<<
@@ -8273,7 +8285,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
           }
           __pyx_L24:;
 
-          /* "Code\fast_pathfinding.pyx":254
+          /* "Code/fast_pathfinding.pyx":254
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = gameStateObj.grid_manager.get_team_node((c.x, c.y))
  *                     if not unit_team or (not ally_block and compare_teams(self.unit_team, unit_team)) or self.pass_through:             # <<<<<<<<<<<<<<
@@ -8282,7 +8294,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
         }
 
-        /* "Code\fast_pathfinding.pyx":252
+        /* "Code/fast_pathfinding.pyx":252
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:             # <<<<<<<<<<<<<<
@@ -8291,7 +8303,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
  */
       }
 
-      /* "Code\fast_pathfinding.pyx":251
+      /* "Code/fast_pathfinding.pyx":251
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:             # <<<<<<<<<<<<<<
@@ -8303,7 +8315,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
   }
   __pyx_L4_break:;
 
-  /* "Code\fast_pathfinding.pyx":229
+  /* "Code/fast_pathfinding.pyx":229
  *         return path
  * 
  *     def process(self, gameStateObj, bint adj_good_enough=False, bint ally_block=False, limit=None):             # <<<<<<<<<<<<<<
@@ -8334,7 +8346,7 @@ static PyObject *__pyx_pf_4Code_16fast_pathfinding_5AStar_18process(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":279
+/* "Code/fast_pathfinding.pyx":279
  *     cdef bint pass_through
  * 
  *     def __init__(self, tuple startposition, list grid, int grid_width, int grid_height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
@@ -8460,7 +8472,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "Code\fast_pathfinding.pyx":280
+  /* "Code/fast_pathfinding.pyx":280
  * 
  *     def __init__(self, tuple startposition, list grid, int grid_width, int grid_height, str unit_team, bint pass_through):
  *         self.open = []             # <<<<<<<<<<<<<<
@@ -8475,7 +8487,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __pyx_v_self->open = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":281
+  /* "Code/fast_pathfinding.pyx":281
  *     def __init__(self, tuple startposition, list grid, int grid_width, int grid_height, str unit_team, bint pass_through):
  *         self.open = []
  *         heapq.heapify(self.open)             # <<<<<<<<<<<<<<
@@ -8514,7 +8526,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":282
+  /* "Code/fast_pathfinding.pyx":282
  *         self.open = []
  *         heapq.heapify(self.open)
  *         self.closed = set()             # <<<<<<<<<<<<<<
@@ -8529,7 +8541,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __pyx_v_self->closed = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":283
+  /* "Code/fast_pathfinding.pyx":283
  *         heapq.heapify(self.open)
  *         self.closed = set()
  *         self.cells = grid # Must keep order.             # <<<<<<<<<<<<<<
@@ -8542,7 +8554,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __Pyx_DECREF(__pyx_v_self->cells);
   __pyx_v_self->cells = __pyx_v_grid;
 
-  /* "Code\fast_pathfinding.pyx":284
+  /* "Code/fast_pathfinding.pyx":284
  *         self.closed = set()
  *         self.cells = grid # Must keep order.
  *         self.gridHeight = grid_height             # <<<<<<<<<<<<<<
@@ -8551,7 +8563,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
  */
   __pyx_v_self->gridHeight = __pyx_v_grid_height;
 
-  /* "Code\fast_pathfinding.pyx":285
+  /* "Code/fast_pathfinding.pyx":285
  *         self.cells = grid # Must keep order.
  *         self.gridHeight = grid_height
  *         self.gridWidth = grid_width             # <<<<<<<<<<<<<<
@@ -8560,7 +8572,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
  */
   __pyx_v_self->gridWidth = __pyx_v_grid_width;
 
-  /* "Code\fast_pathfinding.pyx":286
+  /* "Code/fast_pathfinding.pyx":286
  *         self.gridHeight = grid_height
  *         self.gridWidth = grid_width
  *         self.reset_grid()             # <<<<<<<<<<<<<<
@@ -8569,7 +8581,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
  */
   ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Djikstra *)__pyx_v_self->__pyx_vtab)->reset_grid(__pyx_v_self);
 
-  /* "Code\fast_pathfinding.pyx":287
+  /* "Code/fast_pathfinding.pyx":287
  *         self.gridWidth = grid_width
  *         self.reset_grid()
  *         self.startposition = startposition             # <<<<<<<<<<<<<<
@@ -8582,7 +8594,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __Pyx_DECREF(__pyx_v_self->startposition);
   __pyx_v_self->startposition = __pyx_v_startposition;
 
-  /* "Code\fast_pathfinding.pyx":288
+  /* "Code/fast_pathfinding.pyx":288
  *         self.reset_grid()
  *         self.startposition = startposition
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])             # <<<<<<<<<<<<<<
@@ -8613,7 +8625,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __pyx_v_self->start = ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":289
+  /* "Code/fast_pathfinding.pyx":289
  *         self.startposition = startposition
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])
  *         self.unit_team = unit_team             # <<<<<<<<<<<<<<
@@ -8626,7 +8638,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   __Pyx_DECREF(__pyx_v_self->unit_team);
   __pyx_v_self->unit_team = __pyx_v_unit_team;
 
-  /* "Code\fast_pathfinding.pyx":290
+  /* "Code/fast_pathfinding.pyx":290
  *         self.start = self.get_cell(self.startposition[0], self.startposition[1])
  *         self.unit_team = unit_team
  *         self.pass_through = pass_through             # <<<<<<<<<<<<<<
@@ -8635,7 +8647,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
  */
   __pyx_v_self->pass_through = __pyx_v_pass_through;
 
-  /* "Code\fast_pathfinding.pyx":279
+  /* "Code/fast_pathfinding.pyx":279
  *     cdef bint pass_through
  * 
  *     def __init__(self, tuple startposition, list grid, int grid_width, int grid_height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
@@ -8658,7 +8670,7 @@ static int __pyx_pf_4Code_16fast_pathfinding_8Djikstra___init__(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":292
+/* "Code/fast_pathfinding.pyx":292
  *         self.pass_through = pass_through
  * 
  *     cdef Node get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -8676,7 +8688,7 @@ static struct __pyx_obj_4Code_16fast_pathfinding_Node *__pyx_f_4Code_16fast_path
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_cell", 0);
 
-  /* "Code\fast_pathfinding.pyx":293
+  /* "Code/fast_pathfinding.pyx":293
  * 
  *     cdef Node get_cell(self, int x, int y):
  *         return self.cells[x * self.gridHeight + y]             # <<<<<<<<<<<<<<
@@ -8696,7 +8708,7 @@ static struct __pyx_obj_4Code_16fast_pathfinding_Node *__pyx_f_4Code_16fast_path
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":292
+  /* "Code/fast_pathfinding.pyx":292
  *         self.pass_through = pass_through
  * 
  *     cdef Node get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
@@ -8715,7 +8727,7 @@ static struct __pyx_obj_4Code_16fast_pathfinding_Node *__pyx_f_4Code_16fast_path
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":295
+/* "Code/fast_pathfinding.pyx":295
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     cdef void reset_grid(self):             # <<<<<<<<<<<<<<
@@ -8734,7 +8746,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_reset_grid(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("reset_grid", 0);
 
-  /* "Code\fast_pathfinding.pyx":297
+  /* "Code/fast_pathfinding.pyx":297
  *     cdef void reset_grid(self):
  *         cdef Node cell
  *         for cell in self.cells:             # <<<<<<<<<<<<<<
@@ -8758,7 +8770,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_reset_grid(struct __pyx_o
     __Pyx_XDECREF_SET(__pyx_v_cell, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "Code\fast_pathfinding.pyx":298
+    /* "Code/fast_pathfinding.pyx":298
  *         cdef Node cell
  *         for cell in self.cells:
  *             cell.reset()             # <<<<<<<<<<<<<<
@@ -8767,7 +8779,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_reset_grid(struct __pyx_o
  */
     ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Node *)__pyx_v_cell->__pyx_vtab)->reset(__pyx_v_cell, 0);
 
-    /* "Code\fast_pathfinding.pyx":297
+    /* "Code/fast_pathfinding.pyx":297
  *     cdef void reset_grid(self):
  *         cdef Node cell
  *         for cell in self.cells:             # <<<<<<<<<<<<<<
@@ -8777,7 +8789,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_reset_grid(struct __pyx_o
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":295
+  /* "Code/fast_pathfinding.pyx":295
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     cdef void reset_grid(self):             # <<<<<<<<<<<<<<
@@ -8796,7 +8808,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_reset_grid(struct __pyx_o
   __Pyx_RefNannyFinishContext();
 }
 
-/* "Code\fast_pathfinding.pyx":300
+/* "Code/fast_pathfinding.pyx":300
  *             cell.reset()
  * 
  *     cdef list get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
@@ -8816,7 +8828,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_adjacent_cells", 0);
 
-  /* "Code\fast_pathfinding.pyx":304
+  /* "Code/fast_pathfinding.pyx":304
  *         Returns adjacent cells to a cell. Clockwise starting from the one on
  *         the right"""
  *         cells = []             # <<<<<<<<<<<<<<
@@ -8828,7 +8840,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_v_cells = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":305
+  /* "Code/fast_pathfinding.pyx":305
  *         the right"""
  *         cells = []
  *         if cell.x < self.gridWidth-1:             # <<<<<<<<<<<<<<
@@ -8838,7 +8850,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_t_2 = ((__pyx_v_cell->x < (__pyx_v_self->gridWidth - 1)) != 0);
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":306
+    /* "Code/fast_pathfinding.pyx":306
  *         cells = []
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))             # <<<<<<<<<<<<<<
@@ -8850,7 +8862,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
     __pyx_t_3 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_1); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 306; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":305
+    /* "Code/fast_pathfinding.pyx":305
  *         the right"""
  *         cells = []
  *         if cell.x < self.gridWidth-1:             # <<<<<<<<<<<<<<
@@ -8859,7 +8871,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":307
+  /* "Code/fast_pathfinding.pyx":307
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:             # <<<<<<<<<<<<<<
@@ -8869,7 +8881,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_t_2 = ((__pyx_v_cell->y > 0) != 0);
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":308
+    /* "Code/fast_pathfinding.pyx":308
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))             # <<<<<<<<<<<<<<
@@ -8881,7 +8893,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
     __pyx_t_3 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_1); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 308; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":307
+    /* "Code/fast_pathfinding.pyx":307
  *         if cell.x < self.gridWidth-1:
  *             cells.append(self.get_cell(cell.x+1, cell.y))
  *         if cell.y > 0:             # <<<<<<<<<<<<<<
@@ -8890,7 +8902,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":309
+  /* "Code/fast_pathfinding.pyx":309
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:             # <<<<<<<<<<<<<<
@@ -8900,7 +8912,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_t_2 = ((__pyx_v_cell->x > 0) != 0);
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":310
+    /* "Code/fast_pathfinding.pyx":310
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))             # <<<<<<<<<<<<<<
@@ -8912,7 +8924,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
     __pyx_t_3 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_1); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 310; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":309
+    /* "Code/fast_pathfinding.pyx":309
  *         if cell.y > 0:
  *             cells.append(self.get_cell(cell.x, cell.y-1))
  *         if cell.x > 0:             # <<<<<<<<<<<<<<
@@ -8921,7 +8933,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":311
+  /* "Code/fast_pathfinding.pyx":311
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:             # <<<<<<<<<<<<<<
@@ -8931,7 +8943,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_t_2 = ((__pyx_v_cell->y < (__pyx_v_self->gridHeight - 1)) != 0);
   if (__pyx_t_2) {
 
-    /* "Code\fast_pathfinding.pyx":312
+    /* "Code/fast_pathfinding.pyx":312
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:
  *             cells.append(self.get_cell(cell.x, cell.y+1))             # <<<<<<<<<<<<<<
@@ -8943,7 +8955,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
     __pyx_t_3 = __Pyx_PyList_Append(__pyx_v_cells, __pyx_t_1); if (unlikely(__pyx_t_3 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 312; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":311
+    /* "Code/fast_pathfinding.pyx":311
  *         if cell.x > 0:
  *             cells.append(self.get_cell(cell.x-1, cell.y))
  *         if cell.y < self.gridHeight-1:             # <<<<<<<<<<<<<<
@@ -8952,7 +8964,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
  */
   }
 
-  /* "Code\fast_pathfinding.pyx":313
+  /* "Code/fast_pathfinding.pyx":313
  *         if cell.y < self.gridHeight-1:
  *             cells.append(self.get_cell(cell.x, cell.y+1))
  *         return cells             # <<<<<<<<<<<<<<
@@ -8964,7 +8976,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   __pyx_r = __pyx_v_cells;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":300
+  /* "Code/fast_pathfinding.pyx":300
  *             cell.reset()
  * 
  *     cdef list get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
@@ -8984,7 +8996,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_get_adjacent_cells(s
   return __pyx_r;
 }
 
-/* "Code\fast_pathfinding.pyx":315
+/* "Code/fast_pathfinding.pyx":315
  *         return cells
  * 
  *     cdef void update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
@@ -8996,7 +9008,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_update_cell(CYTHON_UNUSED
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("update_cell", 0);
 
-  /* "Code\fast_pathfinding.pyx":317
+  /* "Code/fast_pathfinding.pyx":317
  *     cdef void update_cell(self, Node adj, Node cell):
  *         # g is true distance between this cell and starting position
  *         adj.g = cell.g + adj.cost             # <<<<<<<<<<<<<<
@@ -9005,7 +9017,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_update_cell(CYTHON_UNUSED
  */
   __pyx_v_adj->g = (__pyx_v_cell->g + __pyx_v_adj->cost);
 
-  /* "Code\fast_pathfinding.pyx":318
+  /* "Code/fast_pathfinding.pyx":318
  *         # g is true distance between this cell and starting position
  *         adj.g = cell.g + adj.cost
  *         adj.parent = cell             # <<<<<<<<<<<<<<
@@ -9018,7 +9030,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_update_cell(CYTHON_UNUSED
   __Pyx_DECREF(((PyObject *)__pyx_v_adj->parent));
   __pyx_v_adj->parent = __pyx_v_cell;
 
-  /* "Code\fast_pathfinding.pyx":315
+  /* "Code/fast_pathfinding.pyx":315
  *         return cells
  * 
  *     cdef void update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
@@ -9030,7 +9042,7 @@ static void __pyx_f_4Code_16fast_pathfinding_8Djikstra_update_cell(CYTHON_UNUSED
   __Pyx_RefNannyFinishContext();
 }
 
-/* "Code\fast_pathfinding.pyx":320
+/* "Code/fast_pathfinding.pyx":320
  *         adj.parent = cell
  * 
  *     cpdef set process(self, list team_map, int movement_left):             # <<<<<<<<<<<<<<
@@ -9113,7 +9125,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":325
+  /* "Code/fast_pathfinding.pyx":325
  *         cdef list adj_cells
  *         # add starting cell to open heap queue
  *         heapq.heappush(self.open, (self.start.g, self.start))             # <<<<<<<<<<<<<<
@@ -9164,7 +9176,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":326
+  /* "Code/fast_pathfinding.pyx":326
  *         # add starting cell to open heap queue
  *         heapq.heappush(self.open, (self.start.g, self.start))
  *         while self.open:             # <<<<<<<<<<<<<<
@@ -9175,7 +9187,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __pyx_t_8 = (__pyx_v_self->open != Py_None) && (PyList_GET_SIZE(__pyx_v_self->open) != 0);
     if (!__pyx_t_8) break;
 
-    /* "Code\fast_pathfinding.pyx":328
+    /* "Code/fast_pathfinding.pyx":328
  *         while self.open:
  *             # pop cell from heap queue
  *             g, cell = heapq.heappop(self.open)             # <<<<<<<<<<<<<<
@@ -9269,7 +9281,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __Pyx_XDECREF_SET(__pyx_v_cell, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_t_7));
     __pyx_t_7 = 0;
 
-    /* "Code\fast_pathfinding.pyx":329
+    /* "Code/fast_pathfinding.pyx":329
  *             # pop cell from heap queue
  *             g, cell = heapq.heappop(self.open)
  *             if g > movement_left:             # <<<<<<<<<<<<<<
@@ -9279,7 +9291,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __pyx_t_8 = ((__pyx_v_g > __pyx_v_movement_left) != 0);
     if (__pyx_t_8) {
 
-      /* "Code\fast_pathfinding.pyx":330
+      /* "Code/fast_pathfinding.pyx":330
  *             g, cell = heapq.heappop(self.open)
  *             if g > movement_left:
  *                 return {(node.x, node.y) for node in self.closed}             # <<<<<<<<<<<<<<
@@ -9336,7 +9348,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
       __pyx_t_1 = 0;
       goto __pyx_L0;
 
-      /* "Code\fast_pathfinding.pyx":329
+      /* "Code/fast_pathfinding.pyx":329
  *             # pop cell from heap queue
  *             g, cell = heapq.heappop(self.open)
  *             if g > movement_left:             # <<<<<<<<<<<<<<
@@ -9345,7 +9357,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
  */
     }
 
-    /* "Code\fast_pathfinding.pyx":332
+    /* "Code/fast_pathfinding.pyx":332
  *                 return {(node.x, node.y) for node in self.closed}
  *             # add cell to closed set so we don't process it twice
  *             self.closed.add(cell)             # <<<<<<<<<<<<<<
@@ -9358,7 +9370,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     }
     __pyx_t_12 = PySet_Add(__pyx_v_self->closed, ((PyObject *)__pyx_v_cell)); if (unlikely(__pyx_t_12 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 332; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "Code\fast_pathfinding.pyx":334
+    /* "Code/fast_pathfinding.pyx":334
  *             self.closed.add(cell)
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)             # <<<<<<<<<<<<<<
@@ -9370,7 +9382,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __Pyx_XDECREF_SET(__pyx_v_adj_cells, ((PyObject*)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "Code\fast_pathfinding.pyx":335
+    /* "Code/fast_pathfinding.pyx":335
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:             # <<<<<<<<<<<<<<
@@ -9393,7 +9405,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
       __Pyx_XDECREF_SET(__pyx_v_c, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "Code\fast_pathfinding.pyx":336
+      /* "Code/fast_pathfinding.pyx":336
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:             # <<<<<<<<<<<<<<
@@ -9415,7 +9427,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
       __pyx_L17_bool_binop_done:;
       if (__pyx_t_8) {
 
-        /* "Code\fast_pathfinding.pyx":337
+        /* "Code/fast_pathfinding.pyx":337
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = team_map[c.x * self.gridHeight + c.y]             # <<<<<<<<<<<<<<
@@ -9446,7 +9458,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
         __Pyx_XDECREF_SET(__pyx_v_unit_team, __pyx_t_2);
         __pyx_t_2 = 0;
 
-        /* "Code\fast_pathfinding.pyx":338
+        /* "Code/fast_pathfinding.pyx":338
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = team_map[c.x * self.gridHeight + c.y]
  *                     if not unit_team or compare_teams(self.unit_team, unit_team) or self.pass_through:             # <<<<<<<<<<<<<<
@@ -9475,7 +9487,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
         __pyx_L20_bool_binop_done:;
         if (__pyx_t_8) {
 
-          /* "Code\fast_pathfinding.pyx":339
+          /* "Code/fast_pathfinding.pyx":339
  *                     unit_team = team_map[c.x * self.gridHeight + c.y]
  *                     if not unit_team or compare_teams(self.unit_team, unit_team) or self.pass_through:
  *                         if (c.g, c) in self.open:             # <<<<<<<<<<<<<<
@@ -9497,7 +9509,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
           __pyx_t_13 = (__pyx_t_8 != 0);
           if (__pyx_t_13) {
 
-            /* "Code\fast_pathfinding.pyx":343
+            /* "Code/fast_pathfinding.pyx":343
  *                             # better than the one previously found for this adj
  *                             # cell.
  *                             if c.g > cell.g + c.cost:             # <<<<<<<<<<<<<<
@@ -9521,7 +9533,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
             __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
             if (__pyx_t_13) {
 
-              /* "Code\fast_pathfinding.pyx":344
+              /* "Code/fast_pathfinding.pyx":344
  *                             # cell.
  *                             if c.g > cell.g + c.cost:
  *                                 self.update_cell(c, cell)             # <<<<<<<<<<<<<<
@@ -9531,7 +9543,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
               if (!(likely(((__pyx_v_c) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_c, __pyx_ptype_4Code_16fast_pathfinding_Node))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 344; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
               ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Djikstra *)__pyx_v_self->__pyx_vtab)->update_cell(__pyx_v_self, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_v_c), __pyx_v_cell);
 
-              /* "Code\fast_pathfinding.pyx":345
+              /* "Code/fast_pathfinding.pyx":345
  *                             if c.g > cell.g + c.cost:
  *                                 self.update_cell(c, cell)
  *                                 heapq.heappush(self.open, (c.g, c))             # <<<<<<<<<<<<<<
@@ -9582,7 +9594,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
               __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
               __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-              /* "Code\fast_pathfinding.pyx":343
+              /* "Code/fast_pathfinding.pyx":343
  *                             # better than the one previously found for this adj
  *                             # cell.
  *                             if c.g > cell.g + c.cost:             # <<<<<<<<<<<<<<
@@ -9591,7 +9603,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
  */
             }
 
-            /* "Code\fast_pathfinding.pyx":339
+            /* "Code/fast_pathfinding.pyx":339
  *                     unit_team = team_map[c.x * self.gridHeight + c.y]
  *                     if not unit_team or compare_teams(self.unit_team, unit_team) or self.pass_through:
  *                         if (c.g, c) in self.open:             # <<<<<<<<<<<<<<
@@ -9601,7 +9613,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
             goto __pyx_L23;
           }
 
-          /* "Code\fast_pathfinding.pyx":347
+          /* "Code/fast_pathfinding.pyx":347
  *                                 heapq.heappush(self.open, (c.g, c))
  *                         else:
  *                             self.update_cell(c, cell)             # <<<<<<<<<<<<<<
@@ -9612,7 +9624,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
             if (!(likely(((__pyx_v_c) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_c, __pyx_ptype_4Code_16fast_pathfinding_Node))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 347; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
             ((struct __pyx_vtabstruct_4Code_16fast_pathfinding_Djikstra *)__pyx_v_self->__pyx_vtab)->update_cell(__pyx_v_self, ((struct __pyx_obj_4Code_16fast_pathfinding_Node *)__pyx_v_c), __pyx_v_cell);
 
-            /* "Code\fast_pathfinding.pyx":349
+            /* "Code/fast_pathfinding.pyx":349
  *                             self.update_cell(c, cell)
  *                             # Add adj cell to open list
  *                             heapq.heappush(self.open, (c.g, c))             # <<<<<<<<<<<<<<
@@ -9665,7 +9677,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
           }
           __pyx_L23:;
 
-          /* "Code\fast_pathfinding.pyx":338
+          /* "Code/fast_pathfinding.pyx":338
  *                 if c.reachable and c not in self.closed:
  *                     unit_team = team_map[c.x * self.gridHeight + c.y]
  *                     if not unit_team or compare_teams(self.unit_team, unit_team) or self.pass_through:             # <<<<<<<<<<<<<<
@@ -9674,7 +9686,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
  */
         }
 
-        /* "Code\fast_pathfinding.pyx":336
+        /* "Code/fast_pathfinding.pyx":336
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:
  *                 if c.reachable and c not in self.closed:             # <<<<<<<<<<<<<<
@@ -9683,7 +9695,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
  */
       }
 
-      /* "Code\fast_pathfinding.pyx":335
+      /* "Code/fast_pathfinding.pyx":335
  *             # get adjacent cells for cell
  *             adj_cells = self.get_adjacent_cells(cell)
  *             for c in adj_cells:             # <<<<<<<<<<<<<<
@@ -9694,7 +9706,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "Code\fast_pathfinding.pyx":351
+  /* "Code/fast_pathfinding.pyx":351
  *                             heapq.heappush(self.open, (c.g, c))
  *         # Sometimes gets here if unit is enclosed.
  *         return {(node.x, node.y) for node in self.closed}             # <<<<<<<<<<<<<<
@@ -9749,7 +9761,7 @@ static PyObject *__pyx_f_4Code_16fast_pathfinding_8Djikstra_process(struct __pyx
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "Code\fast_pathfinding.pyx":320
+  /* "Code/fast_pathfinding.pyx":320
  *         adj.parent = cell
  * 
  *     cpdef set process(self, list team_map, int movement_left):             # <<<<<<<<<<<<<<
@@ -10248,275 +10260,6 @@ static PyMethodDef __pyx_methods[] = {
   {0, 0, 0, 0}
 };
 
-static int __pyx_import_star_set(PyObject *o, PyObject* py_name, char *name) {
-  static const char* internal_type_names[] = {
-    "Djikstra",
-    "Node",
-    "__pyx_ctuple_Py_ssize_t",
-    "__pyx_ctuple_Py_ssize_t_struct",
-    "__pyx_ctuple_int",
-    "__pyx_ctuple_int__and_int",
-    "__pyx_ctuple_int__and_int__and_int__and_int",
-    "__pyx_ctuple_int__and_int__and_int__and_int_struct",
-    "__pyx_ctuple_int__and_int_struct",
-    "__pyx_ctuple_int__and_long",
-    "__pyx_ctuple_int__and_long_struct",
-    "__pyx_ctuple_int_struct",
-    "__pyx_ctuple_long__and_int",
-    "__pyx_ctuple_long__and_int_struct",
-    0
-  };
-  const char** type_name = internal_type_names;
-  while (*type_name) {
-    if (__Pyx_StrEq(name, *type_name)) {
-      PyErr_Format(PyExc_TypeError, "Cannot overwrite C type %s", name);
-      goto bad;
-    }
-    type_name++;
-  }
-  if (0);
-  else {
-    if (PyObject_SetAttr(__pyx_m, py_name, o) < 0) goto bad;
-  }
-  return 0;
-  bad:
-  return -1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-static int
-__Pyx_import_all_from(PyObject *locals, PyObject *v)
-{
-    PyObject *all = PyObject_GetAttrString(v, "__all__");
-    PyObject *dict, *name, *value;
-    int skip_leading_underscores = 0;
-    int pos, err;
-
-    if (all == NULL) {
-        if (!PyErr_ExceptionMatches(PyExc_AttributeError))
-            return -1;
-        PyErr_Clear();
-        dict = PyObject_GetAttrString(v, "__dict__");
-        if (dict == NULL) {
-            if (!PyErr_ExceptionMatches(PyExc_AttributeError))
-                return -1;
-            PyErr_SetString(PyExc_ImportError,
-            "from-import-* object has no __dict__ and no __all__");
-            return -1;
-        }
-#if PY_MAJOR_VERSION < 3
-        all = PyObject_CallMethod(dict, (char *)"keys", NULL);
-#else
-        all = PyMapping_Keys(dict);
-#endif
-        Py_DECREF(dict);
-        if (all == NULL)
-            return -1;
-        skip_leading_underscores = 1;
-    }
-
-    for (pos = 0, err = 0; ; pos++) {
-        name = PySequence_GetItem(all, pos);
-        if (name == NULL) {
-            if (!PyErr_ExceptionMatches(PyExc_IndexError))
-                err = -1;
-            else
-                PyErr_Clear();
-            break;
-        }
-        if (skip_leading_underscores &&
-#if PY_MAJOR_VERSION < 3
-            PyString_Check(name) &&
-            PyString_AS_STRING(name)[0] == '_')
-#else
-            PyUnicode_Check(name) &&
-            PyUnicode_AS_UNICODE(name)[0] == '_')
-#endif
-        {
-            Py_DECREF(name);
-            continue;
-        }
-        value = PyObject_GetAttr(v, name);
-        if (value == NULL)
-            err = -1;
-        else if (PyDict_CheckExact(locals))
-            err = PyDict_SetItem(locals, name, value);
-        else
-            err = PyObject_SetItem(locals, name, value);
-        Py_DECREF(name);
-        Py_XDECREF(value);
-        if (err != 0)
-            break;
-    }
-    Py_DECREF(all);
-    return err;
-}
-
-
-static int __pyx_import_star(PyObject* m) {
-
-    int i;
-    int ret = -1;
-    char* s;
-    PyObject *locals = 0;
-    PyObject *list = 0;
-#if PY_MAJOR_VERSION >= 3
-    PyObject *utf8_name = 0;
-#endif
-    PyObject *name;
-    PyObject *item;
-
-    locals = PyDict_New();              if (!locals) goto bad;
-    if (__Pyx_import_all_from(locals, m) < 0) goto bad;
-    list = PyDict_Items(locals);        if (!list) goto bad;
-
-    for(i=0; i<PyList_GET_SIZE(list); i++) {
-        name = PyTuple_GET_ITEM(PyList_GET_ITEM(list, i), 0);
-        item = PyTuple_GET_ITEM(PyList_GET_ITEM(list, i), 1);
-#if PY_MAJOR_VERSION >= 3
-        utf8_name = PyUnicode_AsUTF8String(name);
-        if (!utf8_name) goto bad;
-        s = PyBytes_AS_STRING(utf8_name);
-        if (__pyx_import_star_set(item, name, s) < 0) goto bad;
-        Py_DECREF(utf8_name); utf8_name = 0;
-#else
-        s = PyString_AsString(name);
-        if (!s) goto bad;
-        if (__pyx_import_star_set(item, name, s) < 0) goto bad;
-#endif
-    }
-    ret = 0;
-
-bad:
-    Py_XDECREF(locals);
-    Py_XDECREF(list);
-#if PY_MAJOR_VERSION >= 3
-    Py_XDECREF(utf8_name);
-#endif
-    return ret;
-}
-
-
-
 #if PY_MAJOR_VERSION >= 3
 static struct PyModuleDef __pyx_moduledef = {
   #if PY_VERSION_HEX < 0x03020000
@@ -10550,6 +10293,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_AStar_update_cell, __pyx_k_AStar_update_cell, sizeof(__pyx_k_AStar_update_cell), 0, 0, 1, 1},
   {&__pyx_n_s_CONSTANTS, __pyx_k_CONSTANTS, sizeof(__pyx_k_CONSTANTS), 0, 0, 1, 1},
   {&__pyx_n_s_Code_fast_pathfinding, __pyx_k_Code_fast_pathfinding, sizeof(__pyx_k_Code_fast_pathfinding), 0, 0, 1, 1},
+  {&__pyx_n_s_GC, __pyx_k_GC, sizeof(__pyx_k_GC), 0, 0, 1, 1},
   {&__pyx_n_s_GlobalConstants, __pyx_k_GlobalConstants, sizeof(__pyx_k_GlobalConstants), 0, 0, 1, 1},
   {&__pyx_n_s_Grid_Manager, __pyx_k_Grid_Manager, sizeof(__pyx_k_Grid_Manager), 0, 0, 1, 1},
   {&__pyx_n_s_Grid_Manager___init, __pyx_k_Grid_Manager___init, sizeof(__pyx_k_Grid_Manager___init), 0, 0, 1, 1},
@@ -10571,7 +10315,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_Normal, __pyx_k_Normal, sizeof(__pyx_k_Normal), 0, 0, 1, 1},
   {&__pyx_kp_s__2, __pyx_k__2, sizeof(__pyx_k__2), 0, 0, 1, 0},
   {&__pyx_kp_s__4, __pyx_k__4, sizeof(__pyx_k__4), 0, 0, 1, 0},
-  {&__pyx_n_s__6, __pyx_k__6, sizeof(__pyx_k__6), 0, 0, 1, 1},
   {&__pyx_n_s_add, __pyx_k_add, sizeof(__pyx_k_add), 0, 0, 1, 1},
   {&__pyx_n_s_add_aura_node, __pyx_k_add_aura_node, sizeof(__pyx_k_add_aura_node), 0, 0, 1, 1},
   {&__pyx_n_s_adj, __pyx_k_adj, sizeof(__pyx_k_adj), 0, 0, 1, 1},
@@ -10582,9 +10325,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_aura, __pyx_k_aura, sizeof(__pyx_k_aura), 0, 0, 1, 1},
   {&__pyx_n_s_aura_map, __pyx_k_aura_map, sizeof(__pyx_k_aura_map), 0, 0, 1, 1},
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
-  {&__pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_k_c_Users_pbradley_Documents_GitHu, sizeof(__pyx_k_c_Users_pbradley_Documents_GitHu), 0, 0, 1, 0},
   {&__pyx_n_s_cell, __pyx_k_cell, sizeof(__pyx_k_cell), 0, 0, 1, 1},
   {&__pyx_n_s_cells, __pyx_k_cells, sizeof(__pyx_k_cells), 0, 0, 1, 1},
+  {&__pyx_n_s_cf, __pyx_k_cf, sizeof(__pyx_k_cf), 0, 0, 1, 1},
   {&__pyx_n_s_closed, __pyx_k_closed, sizeof(__pyx_k_closed), 0, 0, 1, 1},
   {&__pyx_n_s_configuration, __pyx_k_configuration, sizeof(__pyx_k_configuration), 0, 0, 1, 1},
   {&__pyx_n_s_cost, __pyx_k_cost, sizeof(__pyx_k_cost), 0, 0, 1, 1},
@@ -10630,6 +10373,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_heappush, __pyx_k_heappush, sizeof(__pyx_k_heappush), 0, 0, 1, 1},
   {&__pyx_n_s_heapq, __pyx_k_heapq, sizeof(__pyx_k_heapq), 0, 0, 1, 1},
   {&__pyx_n_s_height, __pyx_k_height, sizeof(__pyx_k_height), 0, 0, 1, 1},
+  {&__pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_k_home_dan_python_pro_lex_talioni, sizeof(__pyx_k_home_dan_python_pro_lex_talioni), 0, 0, 1, 0},
   {&__pyx_n_s_idx, __pyx_k_idx, sizeof(__pyx_k_idx), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
@@ -10701,7 +10445,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "Code\fast_pathfinding.pyx":146
+  /* "Code/fast_pathfinding.pyx":146
  *                     print(str(cell.cost) + ' '),
  *                 else:
  *                     print('- '),             # <<<<<<<<<<<<<<
@@ -10712,7 +10456,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "Code\fast_pathfinding.pyx":147
+  /* "Code/fast_pathfinding.pyx":147
  *                 else:
  *                     print('- '),
  *             print('\n'),             # <<<<<<<<<<<<<<
@@ -10723,305 +10467,305 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "Code\fast_pathfinding.pyx":47
+  /* "Code/fast_pathfinding.pyx":47
  * class Grid_Manager(object):
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']
  *     def __init__(self, tilemap):             # <<<<<<<<<<<<<<
  *         self.gridHeight = tilemap.height
  *         self.gridWidth = tilemap.width
  */
-  __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_tilemap, __pyx_n_s_num); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__7);
-  __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_init, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__6 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_tilemap, __pyx_n_s_num); if (unlikely(!__pyx_tuple__6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__6);
+  __Pyx_GIVEREF(__pyx_tuple__6);
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_init, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":61
+  /* "Code/fast_pathfinding.pyx":61
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  * 
  *     def init_unit_map(self):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         cdef list cells
  */
-  __pyx_tuple__9 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__9);
-  __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_init_unit_map, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__8 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__8);
+  __Pyx_GIVEREF(__pyx_tuple__8);
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_init_unit_map, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":70
+  /* "Code/fast_pathfinding.pyx":70
  *         return cells
  * 
  *     def init_aura_map(self):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         cdef list cells
  */
-  __pyx_tuple__11 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__11);
-  __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_init_aura_map, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__10 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__10);
+  __Pyx_GIVEREF(__pyx_tuple__10);
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_init_aura_map, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":79
+  /* "Code/fast_pathfinding.pyx":79
  *         return cells
  * 
  *     def set_unit_node(self, tuple pos, unit):             # <<<<<<<<<<<<<<
  *         cdef int idx
  *         idx = pos[0] * self.gridHeight + pos[1]
  */
-  __pyx_tuple__13 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_unit, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__13)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__13);
-  __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_set_unit_node, 79, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__12 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_unit, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__12);
+  __Pyx_GIVEREF(__pyx_tuple__12);
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_set_unit_node, 79, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":88
+  /* "Code/fast_pathfinding.pyx":88
  *             self.team_map[idx] = None
  * 
  *     def get_unit_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__15)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__15);
-  __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_unit_node, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__14)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__14);
+  __Pyx_GIVEREF(__pyx_tuple__14);
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_unit_node, 88, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":91
+  /* "Code/fast_pathfinding.pyx":91
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  *     def get_team_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.team_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_tuple__17 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__17)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__17);
-  __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_team_node, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__16)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__16);
+  __Pyx_GIVEREF(__pyx_tuple__16);
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_team_node, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":95
+  /* "Code/fast_pathfinding.pyx":95
  * 
  *     # === For Auras ===
  *     def reset_aura(self, aura):             # <<<<<<<<<<<<<<
  *         self.known_auras[aura] = set()
  * 
  */
-  __pyx_tuple__19 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__19)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_reset_aura, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__18 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__18)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__18);
+  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_reset_aura, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":98
+  /* "Code/fast_pathfinding.pyx":98
  *         self.known_auras[aura] = set()
  * 
  *     def add_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].add(aura)
  *         self.known_auras[aura].add(pos)
  */
-  __pyx_tuple__21 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__21)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_add_aura_node, 98, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__20 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__20)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_add_aura_node, 98, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":102
+  /* "Code/fast_pathfinding.pyx":102
  *         self.known_auras[aura].add(pos)
  * 
  *     def remove_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  */
-  __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__23)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_remove_aura_node, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_pos, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__22)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_remove_aura_node, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":105
+  /* "Code/fast_pathfinding.pyx":105
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  *     def get_aura_positions(self, aura):             # <<<<<<<<<<<<<<
  *         return self.known_auras[aura]
  * 
  */
-  __pyx_tuple__25 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__25)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__25);
-  __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_aura_positions, 105, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__24 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_aura); if (unlikely(!__pyx_tuple__24)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_aura_positions, 105, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":108
+  /* "Code/fast_pathfinding.pyx":108
  *         return self.known_auras[aura]
  * 
  *     def get_aura_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.aura_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__27)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_aura_node, 108, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__26 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__26)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__26);
+  __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_aura_node, 108, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":112
+  /* "Code/fast_pathfinding.pyx":112
  * 
  *     # === For Movement ===
  *     def get_grid(self, unit):             # <<<<<<<<<<<<<<
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  */
-  __pyx_tuple__29 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_unit); if (unlikely(!__pyx_tuple__29)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_grid, 112, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__28 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_unit); if (unlikely(!__pyx_tuple__28)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
+  __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_grid, 112, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":120
+  /* "Code/fast_pathfinding.pyx":120
  *             return self.grids[unit.movement_group]
  * 
  *     def init_grid(self, mode, tilemap):             # <<<<<<<<<<<<<<
  *         cdef int x, y, tile_cost
  *         cells = []
  */
-  __pyx_tuple__31 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_mode, __pyx_n_s_tilemap, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_tile_cost, __pyx_n_s_cells, __pyx_n_s_tile); if (unlikely(!__pyx_tuple__31)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_init_grid, 120, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__30 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_mode, __pyx_n_s_tilemap, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_tile_cost, __pyx_n_s_cells, __pyx_n_s_tile); if (unlikely(!__pyx_tuple__30)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__30);
+  __Pyx_GIVEREF(__pyx_tuple__30);
+  __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_init_grid, 120, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":130
+  /* "Code/fast_pathfinding.pyx":130
  *         return cells
  * 
  *     def update_tile(self, tile):             # <<<<<<<<<<<<<<
  *         cdef int x, y, num, cost
  *         x = tile.position[0]
  */
-  __pyx_tuple__33 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_tile, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_num, __pyx_n_s_cost); if (unlikely(!__pyx_tuple__33)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_update_tile, 130, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__32 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_tile, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_num, __pyx_n_s_cost); if (unlikely(!__pyx_tuple__32)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_update_tile, 130, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":138
+  /* "Code/fast_pathfinding.pyx":138
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  * 
  *     def draw_grid(self, str grid_name):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         for y in range(self.gridHeight):
  */
-  __pyx_tuple__35 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_grid_name, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__35)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_draw_grid, 138, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__34 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_grid_name, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__34)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_draw_grid, 138, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":150
+  /* "Code/fast_pathfinding.pyx":150
  * 
  * class AStar(object):
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
  *         self.cells = grid
  *         self.gridHeight = height
  */
-  __pyx_tuple__37 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_startposition, __pyx_n_s_goalposition, __pyx_n_s_grid, __pyx_n_s_width, __pyx_n_s_height, __pyx_n_s_unit_team, __pyx_n_s_pass_through); if (unlikely(!__pyx_tuple__37)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
-  __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_init, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__36 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_startposition, __pyx_n_s_goalposition, __pyx_n_s_grid, __pyx_n_s_width, __pyx_n_s_height, __pyx_n_s_unit_team, __pyx_n_s_pass_through); if (unlikely(!__pyx_tuple__36)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_init, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":163
+  /* "Code/fast_pathfinding.pyx":163
  *         self.reset()
  * 
  *     def reset_grid(self):             # <<<<<<<<<<<<<<
  *         cdef Node cell
  *         for cell in self.cells:
  */
-  __pyx_tuple__39 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__39)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_reset_grid, 163, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__38 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__38)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_reset_grid, 163, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":168
+  /* "Code/fast_pathfinding.pyx":168
  *             cell.reset()
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
  *         self.open = []
  *         heapq.heapify(self.open)
  */
-  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__41)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_reset, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__40 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__40)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__40);
+  __Pyx_GIVEREF(__pyx_tuple__40);
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_reset, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":175
+  /* "Code/fast_pathfinding.pyx":175
  *         self.reset_grid()
  * 
  *     def set_goal_pos(self, goal_pos):             # <<<<<<<<<<<<<<
  *         self.goalposition = goal_pos
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1])
  */
-  __pyx_tuple__43 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_goal_pos); if (unlikely(!__pyx_tuple__43)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__43);
-  __Pyx_GIVEREF(__pyx_tuple__43);
-  __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_set_goal_pos, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__42 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_goal_pos); if (unlikely(!__pyx_tuple__42)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__42);
+  __Pyx_GIVEREF(__pyx_tuple__42);
+  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_set_goal_pos, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":180
+  /* "Code/fast_pathfinding.pyx":180
  *         self.adj_end = self.get_adjacent_cells(self.end)
  * 
  *     def get_heuristic(self, Node cell):             # <<<<<<<<<<<<<<
  *         """Compute the heuristic for this cell, h
  *         h is approximate distance between this cell and the ending cell"""
  */
-  __pyx_tuple__45 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_dx1, __pyx_n_s_dy1, __pyx_n_s_h, __pyx_n_s_dx2, __pyx_n_s_dy2, __pyx_n_s_cross); if (unlikely(!__pyx_tuple__45)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__45);
-  __Pyx_GIVEREF(__pyx_tuple__45);
-  __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_heuristic, 180, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__44 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_dx1, __pyx_n_s_dy1, __pyx_n_s_h, __pyx_n_s_dx2, __pyx_n_s_dy2, __pyx_n_s_cross); if (unlikely(!__pyx_tuple__44)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__44);
+  __Pyx_GIVEREF(__pyx_tuple__44);
+  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_heuristic, 180, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":195
+  /* "Code/fast_pathfinding.pyx":195
  *         return h + cross*.001
  * 
  *     def get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
  *         return self.cells[x * self.gridHeight + y]
  * 
  */
-  __pyx_tuple__47 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__47)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__47);
-  __Pyx_GIVEREF(__pyx_tuple__47);
-  __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_cell, 195, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__46 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__46)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__46);
+  __Pyx_GIVEREF(__pyx_tuple__46);
+  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_cell, 195, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":198
+  /* "Code/fast_pathfinding.pyx":198
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     def get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
  *         """
  *         Returns adjacent cells to a cell. Clockwise starting from the one on
  */
-  __pyx_tuple__49 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__49)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__49);
-  __Pyx_GIVEREF(__pyx_tuple__49);
-  __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_get_adjacent_cells, 198, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__48 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_cells); if (unlikely(!__pyx_tuple__48)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__48);
+  __Pyx_GIVEREF(__pyx_tuple__48);
+  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_get_adjacent_cells, 198, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":213
+  /* "Code/fast_pathfinding.pyx":213
  *         return cells
  * 
  *     def update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
  *         # h is approximate distance between this cell and end goal
  *         # g is true distance between this cell and starting position
  */
-  __pyx_tuple__51 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_adj, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__51)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__51);
-  __Pyx_GIVEREF(__pyx_tuple__51);
-  __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_update_cell, 213, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__50 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_adj, __pyx_n_s_cell); if (unlikely(!__pyx_tuple__50)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__50);
+  __Pyx_GIVEREF(__pyx_tuple__50);
+  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_update_cell, 213, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":222
+  /* "Code/fast_pathfinding.pyx":222
  *         adj.f = adj.h + adj.g
  * 
  *     def return_path(self, Node cell):             # <<<<<<<<<<<<<<
  *         path = []
  *         while cell:
  */
-  __pyx_tuple__53 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_path); if (unlikely(!__pyx_tuple__53)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__53);
-  __Pyx_GIVEREF(__pyx_tuple__53);
-  __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_return_path, 222, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__52 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_cell, __pyx_n_s_path); if (unlikely(!__pyx_tuple__52)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__52);
+  __Pyx_GIVEREF(__pyx_tuple__52);
+  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_return_path, 222, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "Code\fast_pathfinding.pyx":229
+  /* "Code/fast_pathfinding.pyx":229
  *         return path
  * 
  *     def process(self, gameStateObj, bint adj_good_enough=False, bint ally_block=False, limit=None):             # <<<<<<<<<<<<<<
  *         cdef float f
  *         cdef Node cell
  */
-  __pyx_tuple__55 = PyTuple_Pack(10, __pyx_n_s_self, __pyx_n_s_gameStateObj, __pyx_n_s_adj_good_enough, __pyx_n_s_ally_block, __pyx_n_s_limit, __pyx_n_s_f, __pyx_n_s_cell, __pyx_n_s_adj_cells, __pyx_n_s_c, __pyx_n_s_unit_team); if (unlikely(!__pyx_tuple__55)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__55);
-  __Pyx_GIVEREF(__pyx_tuple__55);
-  __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(5, 0, 10, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_c_Users_pbradley_Documents_GitHu, __pyx_n_s_process, 229, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__54 = PyTuple_Pack(10, __pyx_n_s_self, __pyx_n_s_gameStateObj, __pyx_n_s_adj_good_enough, __pyx_n_s_ally_block, __pyx_n_s_limit, __pyx_n_s_f, __pyx_n_s_cell, __pyx_n_s_adj_cells, __pyx_n_s_c, __pyx_n_s_unit_team); if (unlikely(!__pyx_tuple__54)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__54);
+  __Pyx_GIVEREF(__pyx_tuple__54);
+  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(5, 0, 10, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_home_dan_python_pro_lex_talioni, __pyx_n_s_process, 229, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -11164,55 +10908,43 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   if (__Pyx_patch_abc() < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   #endif
 
-  /* "Code\fast_pathfinding.pyx":3
+  /* "Code/fast_pathfinding.pyx":3
  * # fast_pathfinding.pyx
  * # cython
  * import heapq             # <<<<<<<<<<<<<<
- * from GlobalConstants import *
- * from configuration import *
+ * import GlobalConstants as GC
+ * import configuration as cf
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_heapq, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 3; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_heapq, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 3; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":4
+  /* "Code/fast_pathfinding.pyx":4
  * # cython
  * import heapq
- * from GlobalConstants import *             # <<<<<<<<<<<<<<
- * from configuration import *
+ * import GlobalConstants as GC             # <<<<<<<<<<<<<<
+ * import configuration as cf
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 4; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_GlobalConstants, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 4; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_n_s__6);
-  __Pyx_GIVEREF(__pyx_n_s__6);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s__6);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_GlobalConstants, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 4; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_GC, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 4; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__pyx_import_star(__pyx_t_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 4; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "Code\fast_pathfinding.pyx":5
+  /* "Code/fast_pathfinding.pyx":5
  * import heapq
- * from GlobalConstants import *
- * from configuration import *             # <<<<<<<<<<<<<<
+ * import GlobalConstants as GC
+ * import configuration as cf             # <<<<<<<<<<<<<<
  * 
  * cdef bint compare_teams(str team1, str team2):
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 5; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(__pyx_n_s__6);
-  __Pyx_GIVEREF(__pyx_n_s__6);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s__6);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_configuration, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 5; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_configuration, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 5; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__pyx_import_star(__pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 5; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cf, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 5; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":45
+  /* "Code/fast_pathfinding.pyx":45
  *         self.f = 0
  * 
  * class Grid_Manager(object):             # <<<<<<<<<<<<<<
@@ -11229,7 +10961,7 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_Grid_Manager, __pyx_n_s_Grid_Manager, (PyObject *) NULL, __pyx_n_s_Code_fast_pathfinding, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 45; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "Code\fast_pathfinding.pyx":46
+  /* "Code/fast_pathfinding.pyx":46
  * 
  * class Grid_Manager(object):
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']             # <<<<<<<<<<<<<<
@@ -11262,187 +10994,187 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_slots, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 46; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":47
+  /* "Code/fast_pathfinding.pyx":47
  * class Grid_Manager(object):
  *     __slots__ = ['gridHeight', 'gridWidth', 'grids', 'team_map', 'unit_map', 'aura_map', 'known_auras']
  *     def __init__(self, tilemap):             # <<<<<<<<<<<<<<
  *         self.gridHeight = tilemap.height
  *         self.gridWidth = tilemap.width
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_1__init__, 0, __pyx_n_s_Grid_Manager___init, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_1__init__, 0, __pyx_n_s_Grid_Manager___init, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_init, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 47; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":61
+  /* "Code/fast_pathfinding.pyx":61
  *         self.known_auras = {} # Key: Aura, Value: Set of positions
  * 
  *     def init_unit_map(self):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         cdef list cells
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_3init_unit_map, 0, __pyx_n_s_Grid_Manager_init_unit_map, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_3init_unit_map, 0, __pyx_n_s_Grid_Manager_init_unit_map, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_init_unit_map, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":70
+  /* "Code/fast_pathfinding.pyx":70
  *         return cells
  * 
  *     def init_aura_map(self):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         cdef list cells
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_5init_aura_map, 0, __pyx_n_s_Grid_Manager_init_aura_map, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_5init_aura_map, 0, __pyx_n_s_Grid_Manager_init_aura_map, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_init_aura_map, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":79
+  /* "Code/fast_pathfinding.pyx":79
  *         return cells
  * 
  *     def set_unit_node(self, tuple pos, unit):             # <<<<<<<<<<<<<<
  *         cdef int idx
  *         idx = pos[0] * self.gridHeight + pos[1]
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_7set_unit_node, 0, __pyx_n_s_Grid_Manager_set_unit_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_7set_unit_node, 0, __pyx_n_s_Grid_Manager_set_unit_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_set_unit_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":88
+  /* "Code/fast_pathfinding.pyx":88
  *             self.team_map[idx] = None
  * 
  *     def get_unit_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_9get_unit_node, 0, __pyx_n_s_Grid_Manager_get_unit_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_9get_unit_node, 0, __pyx_n_s_Grid_Manager_get_unit_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_unit_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":91
+  /* "Code/fast_pathfinding.pyx":91
  *         return self.unit_map[pos[0] * self.gridHeight + pos[1]]
  * 
  *     def get_team_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.team_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_11get_team_node, 0, __pyx_n_s_Grid_Manager_get_team_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_11get_team_node, 0, __pyx_n_s_Grid_Manager_get_team_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_team_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":95
+  /* "Code/fast_pathfinding.pyx":95
  * 
  *     # === For Auras ===
  *     def reset_aura(self, aura):             # <<<<<<<<<<<<<<
  *         self.known_auras[aura] = set()
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_13reset_aura, 0, __pyx_n_s_Grid_Manager_reset_aura, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_13reset_aura, 0, __pyx_n_s_Grid_Manager_reset_aura, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_reset_aura, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":98
+  /* "Code/fast_pathfinding.pyx":98
  *         self.known_auras[aura] = set()
  * 
  *     def add_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].add(aura)
  *         self.known_auras[aura].add(pos)
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_15add_aura_node, 0, __pyx_n_s_Grid_Manager_add_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_15add_aura_node, 0, __pyx_n_s_Grid_Manager_add_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_add_aura_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 98; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":102
+  /* "Code/fast_pathfinding.pyx":102
  *         self.known_auras[aura].add(pos)
  * 
  *     def remove_aura_node(self, tuple pos, aura):             # <<<<<<<<<<<<<<
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_17remove_aura_node, 0, __pyx_n_s_Grid_Manager_remove_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_17remove_aura_node, 0, __pyx_n_s_Grid_Manager_remove_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_remove_aura_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 102; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":105
+  /* "Code/fast_pathfinding.pyx":105
  *         self.aura_map[pos[0] * self.gridHeight + pos[1]].discard(aura)
  * 
  *     def get_aura_positions(self, aura):             # <<<<<<<<<<<<<<
  *         return self.known_auras[aura]
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_19get_aura_positions, 0, __pyx_n_s_Grid_Manager_get_aura_positions, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_19get_aura_positions, 0, __pyx_n_s_Grid_Manager_get_aura_positions, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_aura_positions, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 105; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":108
+  /* "Code/fast_pathfinding.pyx":108
  *         return self.known_auras[aura]
  * 
  *     def get_aura_node(self, pos):             # <<<<<<<<<<<<<<
  *         return self.aura_map[pos[0] * self.gridHeight + pos[1]]
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_21get_aura_node, 0, __pyx_n_s_Grid_Manager_get_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_21get_aura_node, 0, __pyx_n_s_Grid_Manager_get_aura_node, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_aura_node, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":112
+  /* "Code/fast_pathfinding.pyx":112
  * 
  *     # === For Movement ===
  *     def get_grid(self, unit):             # <<<<<<<<<<<<<<
  *         if 'flying' in unit.status_bundle:
- *             return self.grids[CONSTANTS['flying_mcost_column']]
+ *             return self.grids[cf.CONSTANTS['flying_mcost_column']]
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_23get_grid, 0, __pyx_n_s_Grid_Manager_get_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_23get_grid, 0, __pyx_n_s_Grid_Manager_get_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_grid, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":120
+  /* "Code/fast_pathfinding.pyx":120
  *             return self.grids[unit.movement_group]
  * 
  *     def init_grid(self, mode, tilemap):             # <<<<<<<<<<<<<<
  *         cdef int x, y, tile_cost
  *         cells = []
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_25init_grid, 0, __pyx_n_s_Grid_Manager_init_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_25init_grid, 0, __pyx_n_s_Grid_Manager_init_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_init_grid, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":130
+  /* "Code/fast_pathfinding.pyx":130
  *         return cells
  * 
  *     def update_tile(self, tile):             # <<<<<<<<<<<<<<
  *         cdef int x, y, num, cost
  *         x = tile.position[0]
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_27update_tile, 0, __pyx_n_s_Grid_Manager_update_tile, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_27update_tile, 0, __pyx_n_s_Grid_Manager_update_tile, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_update_tile, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":138
+  /* "Code/fast_pathfinding.pyx":138
  *             self.grids[num][x * self.gridHeight + y] = Node(x, y, cost != 99, cost)
  * 
  *     def draw_grid(self, str grid_name):             # <<<<<<<<<<<<<<
  *         cdef int x, y
  *         for y in range(self.gridHeight):
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_29draw_grid, 0, __pyx_n_s_Grid_Manager_draw_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_12Grid_Manager_29draw_grid, 0, __pyx_n_s_Grid_Manager_draw_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_draw_grid, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 138; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":45
+  /* "Code/fast_pathfinding.pyx":45
  *         self.f = 0
  * 
  * class Grid_Manager(object):             # <<<<<<<<<<<<<<
@@ -11457,7 +11189,7 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":149
+  /* "Code/fast_pathfinding.pyx":149
  *             print('\n'),
  * 
  * class AStar(object):             # <<<<<<<<<<<<<<
@@ -11474,115 +11206,115 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_2, __pyx_t_1, __pyx_n_s_AStar, __pyx_n_s_AStar, (PyObject *) NULL, __pyx_n_s_Code_fast_pathfinding, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 149; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "Code\fast_pathfinding.pyx":150
+  /* "Code/fast_pathfinding.pyx":150
  * 
  * class AStar(object):
  *     def __init__(self, startposition, goalposition, grid, int width, int height, str unit_team, bint pass_through):             # <<<<<<<<<<<<<<
  *         self.cells = grid
  *         self.gridHeight = height
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_1__init__, 0, __pyx_n_s_AStar___init, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_1__init__, 0, __pyx_n_s_AStar___init, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_init, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 150; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":163
+  /* "Code/fast_pathfinding.pyx":163
  *         self.reset()
  * 
  *     def reset_grid(self):             # <<<<<<<<<<<<<<
  *         cdef Node cell
  *         for cell in self.cells:
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_3reset_grid, 0, __pyx_n_s_AStar_reset_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_3reset_grid, 0, __pyx_n_s_AStar_reset_grid, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_reset_grid, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 163; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":168
+  /* "Code/fast_pathfinding.pyx":168
  *             cell.reset()
  * 
  *     def reset(self):             # <<<<<<<<<<<<<<
  *         self.open = []
  *         heapq.heapify(self.open)
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_5reset, 0, __pyx_n_s_AStar_reset, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_5reset, 0, __pyx_n_s_AStar_reset, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_reset, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 168; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":175
+  /* "Code/fast_pathfinding.pyx":175
  *         self.reset_grid()
  * 
  *     def set_goal_pos(self, goal_pos):             # <<<<<<<<<<<<<<
  *         self.goalposition = goal_pos
  *         self.end = self.get_cell(self.goalposition[0], self.goalposition[1])
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_7set_goal_pos, 0, __pyx_n_s_AStar_set_goal_pos, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_7set_goal_pos, 0, __pyx_n_s_AStar_set_goal_pos, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__43)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_set_goal_pos, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 175; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":180
+  /* "Code/fast_pathfinding.pyx":180
  *         self.adj_end = self.get_adjacent_cells(self.end)
  * 
  *     def get_heuristic(self, Node cell):             # <<<<<<<<<<<<<<
  *         """Compute the heuristic for this cell, h
  *         h is approximate distance between this cell and the ending cell"""
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_9get_heuristic, 0, __pyx_n_s_AStar_get_heuristic, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_9get_heuristic, 0, __pyx_n_s_AStar_get_heuristic, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__45)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_heuristic, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 180; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":195
+  /* "Code/fast_pathfinding.pyx":195
  *         return h + cross*.001
  * 
  *     def get_cell(self, int x, int y):             # <<<<<<<<<<<<<<
  *         return self.cells[x * self.gridHeight + y]
  * 
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_11get_cell, 0, __pyx_n_s_AStar_get_cell, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__48)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_11get_cell, 0, __pyx_n_s_AStar_get_cell, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__47)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_cell, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":198
+  /* "Code/fast_pathfinding.pyx":198
  *         return self.cells[x * self.gridHeight + y]
  * 
  *     def get_adjacent_cells(self, Node cell):             # <<<<<<<<<<<<<<
  *         """
  *         Returns adjacent cells to a cell. Clockwise starting from the one on
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_13get_adjacent_cells, 0, __pyx_n_s_AStar_get_adjacent_cells, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_13get_adjacent_cells, 0, __pyx_n_s_AStar_get_adjacent_cells, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__49)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_get_adjacent_cells, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":213
+  /* "Code/fast_pathfinding.pyx":213
  *         return cells
  * 
  *     def update_cell(self, Node adj, Node cell):             # <<<<<<<<<<<<<<
  *         # h is approximate distance between this cell and end goal
  *         # g is true distance between this cell and starting position
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_15update_cell, 0, __pyx_n_s_AStar_update_cell, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__52)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_15update_cell, 0, __pyx_n_s_AStar_update_cell, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__51)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_update_cell, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":222
+  /* "Code/fast_pathfinding.pyx":222
  *         adj.f = adj.h + adj.g
  * 
  *     def return_path(self, Node cell):             # <<<<<<<<<<<<<<
  *         path = []
  *         while cell:
  */
-  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_17return_path, 0, __pyx_n_s_AStar_return_path, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__54)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_17return_path, 0, __pyx_n_s_AStar_return_path, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__53)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_return_path, __pyx_t_4) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 222; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "Code\fast_pathfinding.pyx":229
+  /* "Code/fast_pathfinding.pyx":229
  *         return path
  * 
  *     def process(self, gameStateObj, bint adj_good_enough=False, bint ally_block=False, limit=None):             # <<<<<<<<<<<<<<
@@ -11604,14 +11336,14 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   PyTuple_SET_ITEM(__pyx_t_6, 2, ((PyObject *)Py_None));
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_19process, 0, __pyx_n_s_AStar_process, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = __Pyx_CyFunction_NewEx(&__pyx_mdef_4Code_16fast_pathfinding_5AStar_19process, 0, __pyx_n_s_AStar_process, NULL, __pyx_n_s_Code_fast_pathfinding, __pyx_d, ((PyObject *)__pyx_codeobj__55)); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_5, __pyx_t_6);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (PyObject_SetItem(__pyx_t_3, __pyx_n_s_process, __pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 229; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "Code\fast_pathfinding.pyx":149
+  /* "Code/fast_pathfinding.pyx":149
  *             print('\n'),
  * 
  * class AStar(object):             # <<<<<<<<<<<<<<
@@ -11626,7 +11358,7 @@ PyMODINIT_FUNC PyInit_fast_pathfinding(void)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Code\fast_pathfinding.pyx":1
+  /* "Code/fast_pathfinding.pyx":1
  * # fast_pathfinding.pyx             # <<<<<<<<<<<<<<
  * # cython
  * import heapq
@@ -13948,11 +13680,6 @@ raise_neg_overflow:
     PyErr_SetString(PyExc_OverflowError,
         "can't convert negative value to long");
     return (long) -1;
-}
-
-static CYTHON_INLINE int __Pyx_StrEq(const char *s1, const char *s2) {
-    while (*s1 != '\0' && *s1 == *s2) { s1++; s2++; }
-    return *s1 == *s2;
 }
 
 static int __Pyx_check_binary_version(void) {

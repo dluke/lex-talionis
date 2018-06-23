@@ -1,0 +1,4 @@
+
+#Ignore build files produced by python <...setup.py> build_ext --inplace
+*.so
+Code/
